@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="../../css/public/public.css">
+		<link rel="stylesheet" href="../../css/picLecture/style.css">
+		<style>
+			body{
+				overflow:auto;
+			}
+		</style>
+    </head>
+    <body bgcolor="#000">
+    	<div class="header">
+			<div class="left logoWrap clearfix">
+				<div class="left logo1"><a href=""><img src="../../images/picLecture/logo1.png" alt=""></a></div>
+				<span class="left line"></span>
+				<div class="left logo2"><a href=""><img src="../../images/picLecture/logo2.png" alt=""></a></div>
+			</div>
+			<div class="left name">
+				<div class="inputWrap clearfix">
+					<input type="text" placeholder="请在此处输入讲座名称">
+					<a href="javascript:;" class="icon-save"></a>
+					<a href="javascript:;" class="icon-cancel"></a>
+				</div>
+			</div>
+			<div class="right btnGroup clearfix">
+				<a href="javascript:;" class="btn-save">保存</a>
+				<a href="javascript:;" class="btn-preview">预览</a>
+				<span class="left line"></span>
+				<a href="javascript:;" class="btn-next">下一步</a>
+			</div>
+    	</div>
+		<div class="container infoEdit">
+			<div class="left menu">
+				<a href="" class="item item1">图片</a>
+				<a href="" class="item item2">封面模板</a>
+				<a href="" class="item item3 cur">内页模板</a>
+				<a href="" class="item item4">音乐</a>
+				<a href="" class="item item5">基本信息</a>
+			</div>
+			<div class="left main">
+				<h1>基本信息编辑</h1>
+				<div class="wrap clearfix">
+					<div class="leftWrap left">
+						<div class="row title clearfix">
+							<label><i>*</i>标&nbsp;题：</label>
+							<div class="frame clearfix">
+								<input type="text">
+								<span>13/40</span>
+							</div>
+						</div>
+						<div class="row category clearfix">
+							<label><i>*</i>通用分类：</label>
+							<div class="frame select">
+								<p>生活休闲</p>
+								<ul>
+									<li>生活休闲</li>
+									<li>生活休闲</li>
+									<li>生活休闲</li>
+								</ul>
+							</div>
+							<div class="frame select">
+								<p>生活休闲</p>
+								<ul>
+									<li>生活休闲</li>
+									<li>生活休闲</li>
+									<li>生活休闲</li>
+								</ul>
+							</div>
+							<div class="frame select">
+								<p>生活休闲</p>
+								<ul>
+									<li>生活休闲</li>
+									<li>生活休闲</li>
+									<li>生活休闲</li>
+								</ul>
+							</div>
+							<a class="addSelect" href="javascript:;">+</a>
+						</div>
+						<div class="row clearfix">
+							<label><i>*</i>关键词：</label>
+							<div class="frame" id="parentFrame">
+								<input class="colorGrey" id="keyword" type="text" value="多个关键词请用空格隔开，数量不超过5个" autocomplete="off">
+							</div>
+						</div>
+						<div class="row clearfix">
+							<label><i>*</i>主&nbsp;讲：</label>
+							<div class="frame" id="parentFrame">
+								<input class="colorGrey" id="keyword" type="text" value="多个关键词请用空格隔开，数量不超过5个" autocomplete="off">
+							</div>
+						</div>
+						<div class="row shortcut clearfix">
+							<label><i>*</i>简&nbsp;介：</label>
+							<div class="frame editBox">
+								<div class="tools">
+									<div class="s2 left clearfix">
+										<div class="fontFamily select left">
+											<p>微软雅黑</p>
+											<ul>
+												<li>宋体</li>
+												<li>微软雅黑</li>
+												<li>隶书</li>
+												<li>黑体</li>
+												<li>幼圆</li>
+												<li>楷体</li>
+												<li>黑体</li>
+												<li>幼圆</li>
+												<li>楷体</li>
+												<li>黑体</li>
+												<li>幼圆</li>
+												<li>楷体</li>
+											</ul>
+										</div>
+										<div class="fontSize select left">
+											<p>16px</p>
+											<ul>
+												<li>12px</li>
+												<li>14px</li>
+												<li>16px</li>
+												<li>18px</li>
+												<li>20px</li>
+												<li>22px</li>
+												<li>24px</li>
+												<li>26px</li>
+												<li>28px</li>
+											</ul>
+										</div>
+										<a href="javascript:void(0);" class="left textSet bold"><img src="../../images/edit/toolsbar-icon4.png" width="11" height="17"></a>
+										<a href="javascript:void(0);" class="left textSet italic"><img src="../../images/edit/toolsbar-icon5.png" width="11" height="17"></a>
+										<a href="javascript:void(0);" class="left textSet underline"><img src="../../images/edit/toolsbar-icon6.png" width="12" height="17"></a>
+										<a href="javascript:void(0);" class="left textSet color"><img src="../../images/edit/toolsbar-icon7.png" width="15" height="17"></a>
+										<a href="javascript:void(0);" class="left textSet bgcolor"><img src="../../images/edit/toolsbar-icon8.png" width="19" height="17"></a>
+									</div>
+									<div class="s3 left clearfix">
+											<a href="javascript:void(0);" class="left alignSet tleft"><img src="../../images/edit/toolsbar-icon9.png" width="14" height="17"></a>
+											<a href="javascript:void(0);" class="left alignSet tcenter"><img src="../../images/edit/toolsbar-icon10.png" width="15" height="17"></a>
+										<a href="javascript:void(0);" class="left alignSet tright"><img src="../../images/edit/toolsbar-icon11.png" width="14" height="17"></a>
+											<!--    <a href="javascript:void(0);" class="left sjSet sj1"><img src="../../images/edit/toolsbar-icon12.png" width="15" height="17"/></a>-->
+											<a href="javascript:void(0);" class="left sjSet sj2"><img src="../../images/edit/toolsbar-icon13.png" width="15" height="17"></a>
+											<div class="left lineHeight">
+											<p><img src="../../images/edit/toolsbar-icon14.png" width="18" height="17"></p>
+											<ul style="display: none;">
+												<li class="select"><a href="javascript:void(0);">1</a></li>
+												<li><a href="javascript:void(0);">1.5</a></li>
+												<li><a href="javascript:void(0);">1.75</a></li>
+												<li><a href="javascript:void(0);">2</a></li>
+												<li><a href="javascript:void(0);">3</a></li>
+												<li><a href="javascript:void(0);">4</a></li>
+												<li><a href="javascript:void(0);">5</a></li>
+											</ul>
+											</div>
+									</div>
+									<div class="s4 left clearfix">
+										<a href="javascript:void(0);" class="left media link"><img src="../../images/edit/toolsbar-icon15.png" width="15" height="17"></a>
+										<a href="javascript:void(0);" class="left media pic"><img src="../../images/edit/toolsbar-icon16.png" width="15" height="17"></a>
+
+									</div>
+								</div>
+								<textarea placeholder="针对发布的讲座简单介绍背景、目的、内容 、目录等信息"></textarea>
+							</div>
+							<p class="wordLimit">0/2000</p>
+						</div>
+					</div>
+					<div class="rightWrap left">
+						<div class="row cover clearfix">
+							<div class="clearfix">
+								<label><i>*</i>封 面：</label>
+								<dl class="clearfix">
+									<dt>
+										</dt><dd>
+											<p>建议封面尺寸为<i>280px*210px</i></p>
+											<p>图片需小于2M，支持jpg、gif、png</p>
+										</dd>
+									
+								</dl>
+							</div>
+							<a href="javascript:;" class="btn">本地上传</a>
+						</div>
+						<div class="row price clearfix">
+							<label><i>*</i>价 格：</label>
+							<div class="left">
+								<div class="clearfix">
+									<input type="radio" id="free" name="price">
+									<label class="label1" for="free">免费</label>
+								</div>
+								<div class="clearfix">
+									<input type="radio" id="pay" name="price">
+									<label class="label1" for="pay">付费</label>
+									<div class="inputWrap">
+										<span>￥</span><input type="text">
+									</div>
+									<label class="label2">元</label>
+								</div>
+							</div>
+						</div>
+						<div class="row status clearfix">
+							<label><i>*</i>状 态：</label>
+							<div class="left statusBox">
+								<div class="select">
+									<p>机构内发布+公开发布</p>
+									<ul>
+										<li>仅在机构内发布</li>
+										<li>机构内发布+公开发布</li>
+									</ul>
+								</div>
+								<div class="select select2">
+									<p>发布到</p>
+									<div class="menu">
+										<ul>
+											<li><input type="checkbox" checked="" diabeld="">公开发布</li>
+											<li><input type="checkbox">李俊平名师工作室</li>
+											<li><input type="checkbox">李俊平名师工作室</li>
+											<li><input type="checkbox">李俊平名师工作室</li>
+											<li><input type="checkbox">李俊平名师工作室</li>
+											<li><input type="checkbox">李俊平</li>
+										</ul>
+										<div class="btnWrap">
+											<a href="javascript:;">确定</a>
+										</div>
+									</div>
+								</div>
+								<p class="tip">公开发布的作品，可在平台上公开出版，被读者订阅、分享并获得收益！</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../js/public/jquery-1.8.2.min.js"></script>
+		<script src="../../js/public/placeholder.js"></script>
+		<script src="../../js/public/divSelect.js"></script>
+		<script src="../../js/picLecture/picLecture.js"></script>
+		<script>
+			/*插入关键字*/
+			(function () {
+				var input = $("#keyword");
+				var jsNode = document.getElementById("keyword");
+	
+				function CreateKeywordNode(value) {
+					var keyword = document.createElement("div");
+					var closeIt = document.createElement("div");
+					closeIt.className = "close";
+					keyword.className = "keyword";
+					var text = document.createTextNode(value);
+					keyword.appendChild(text);
+					keyword.appendChild(closeIt);
+					document.getElementById("parentFrame").insertBefore(keyword, jsNode);
+					jsNode.value = "";
+				}
+	
+				/*根据用户的输入是否带有空格来判断*/
+				input.keyup(function (e) {
+					var value = $(this).val();
+					var useInputLength = value.length;
+	
+					if ($.trim(value).length != useInputLength && Boolean($.trim(value).length)) {
+						var children = $(this).parent().children();
+						var sumLen = 0;
+						var childrenLen = children.length;
+						for (var i = 0; i < childrenLen; i++) {
+							sumLen += children.eq(i).width();
+						}
+						if ( /*sumLen<350*/ 1) {
+							CreateKeywordNode(jsNode.value);
+							$(".keyword .close").click(function () {
+								$(this).parent().remove();
+							});
+						}
+					}
+				});
+	
+				input.focus(function () {
+					if ($(this).val() == "多个关键词请用空格隔开，数量不超过5个") {
+						$(this).val("");
+						$(this).removeClass("colorGrey");
+						$(this).css({
+							"width": "120px"
+						})
+					}
+				})
+				input.blur(function () {
+					if ($(this).val() == "" && $(this).parent().children().length == 1) {
+						$(this).val("多个关键词请用空格隔开，数量不超过5个");
+						$(this).addClass("colorGrey");
+						$(this).css({
+							"width": "262px"
+						})
+					} else {
+						var value = $(this).val();
+						var useInputLength = value.length;
+						if ($.trim(value).length == useInputLength && Boolean($.trim(value).length)) {
+							var children = $(this).parent().children();
+							var sumLen = 0;
+							var childrenLen = children.length;
+							for (var i = 0; i < childrenLen; i++) {
+								sumLen += children.eq(i).width();
+							}
+							if (sumLen < 350) {
+								CreateKeywordNode(jsNode.value);
+								$(".keyword .close").click(function () {
+									$(this).parent().remove();
+								});
+							}
+						}
+					}
+				})
+			})()
+	
+	
+			$(function () {
+				//调用模拟下拉
+				$.divselect($(".select p"), $(".select ul:not(.select2 ul)"), $(".select ul li:not(.select2 ul li)"));
+				$(".tools .select p").click(function () {
+					$(".lineHeight ul").hide()
+				});
+				// 分别设置文本属性，对齐方式，缩进的选中状态
+				$(".textSet").click(function () {
+					$(this).toggleClass("click")
+				})
+				$(".alignSet").click(function () {
+					$(this).addClass("click").siblings(".alignSet").removeClass("click")
+				})
+				$(".sjSet").click(function () {
+					$(this).addClass("click").siblings(".sjSet").removeClass("click")
+				})
+				//行距脚本
+				$(".lineHeight").click(function (e) {
+					$(".tools ul").hide()
+					$(this).addClass("click")
+					$(this).find("ul").slideDown(200)
+					e.stopPropagation();
+				})
+				$(".lineHeight li").click(function (e) {
+					$(this).addClass("select").siblings().removeClass("select")
+					$(this).parents(".lineHeight").removeClass("click")
+					$(this).parent("ul").slideUp(200)
+					e.stopPropagation();
+				})
+				$(document).click(function () {
+					$(".lineHeight").removeClass("click")
+					$(".lineHeight ul").hide();
+				})
+			});
+		</script>
+    </body>
+</html>

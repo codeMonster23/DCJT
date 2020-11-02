@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="../../css/public/public.css">
+		<link rel="stylesheet" href="../../css/public/jquery.mCustomScrollbar.css">
+		<link rel="stylesheet" href="../../css/picLecture/style.css">
+		<link rel="stylesheet" href="../../css/picLecture/modalStyle.css">
+		<style>
+			.display{
+				height: 845px !important;
+				padding-bottom:30px;
+			}
+			@media screen and (max-width:1400px){
+				.display{
+					height: 600px !important;
+				}
+			}
+		</style>
+    </head>
+    <body bgcolor="#000">
+    	<div class="header">
+			<div class="left logoWrap clearfix">
+				<div class="left logo1"><a href=""><img src="../../images/picLecture/logo1.png" alt=""></a></div>
+				<span class="left line"></span>
+				<div class="left logo2"><a href=""><img src="../../images/picLecture/logo2.png" alt=""></a></div>
+			</div>
+			<div class="left name">
+				<div class="txtWrap clearfix">
+					<span class="left text">曙光幼儿园第二十一届学生美术作品展曙光幼儿园第二十一届学生美术作品展</span>
+					<a href="javascript:;" class="left icon-edit"></a>
+				</div>
+			</div>
+			<div class="right btnGroup clearfix">
+				<a href="javascript:;" class="btn-save">保存</a>
+				<a href="javascript:;" class="btn-preview">预览</a>
+				<span class="left line"></span>
+				<a href="javascript:;" class="btn-next">下一步</a>
+			</div>
+    	</div>
+		<div class="container clearfix">
+			<div class="left menu">
+				<a href="" class="item item1 cur">图片</a>
+				<a href="" class="item item2">封面模板</a>
+				<a href="" class="item item3">内页模板</a>
+				<a href="" class="item item4">音乐</a>
+			</div>
+			<div class="left sidebar">
+				<div class="leftbar"><a href="javascript:;" class="btn-manage"></a></div>
+				<div class="btnGroup">
+					<a href="" class="btn1">+添加图片</a>
+					<a href="">+添加分组</a>
+				</div>
+				<div class="listWrap">
+					<ul class="list">
+						<li>
+							<img src="../../imagesTemp/picLecture/pic1.jpg" alt="">
+							<div class="icon-group">
+								<a href="" class="icon-rotate"></a>
+								<a href="" class="icon-del"></a>
+							</div>
+							<a href="" class="icon-add"></a>
+						</li>
+						<li>
+							<img src="../../imagesTemp/picLecture/pic1.jpg" alt="">
+							<div class="icon-group">
+								<a href="" class="icon-rotate"></a>
+								<a href="" class="icon-del"></a>
+							</div>
+							<a href="" class="icon-add"></a>
+						</li>
+						<li>
+							<img src="../../imagesTemp/picLecture/pic1.jpg" alt="">
+							<div class="icon-group">
+								<a href="" class="icon-rotate"></a>
+								<a href="" class="icon-del"></a>
+							</div>
+							<a href="" class="icon-add"></a>
+						</li>
+						<li>
+							<img src="../../imagesTemp/picLecture/pic1.jpg" alt="">
+							<div class="icon-group">
+								<a href="" class="icon-rotate"></a>
+								<a href="" class="icon-del"></a>
+							</div>
+							<a href="" class="icon-add"></a>
+						</li>
+						<li>
+							<img src="../../imagesTemp/picLecture/pic1.jpg" alt="">
+							<div class="icon-group">
+								<a href="" class="icon-rotate"></a>
+								<a href="" class="icon-del"></a>
+							</div>
+							<a href="" class="icon-add"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="left main">
+				<div class="display" style="background: url(../../imagesTemp/picLecture/skin01.jpg)">
+					<div class="picBox">
+						<div class="carousel">
+							<ul class="imageList">
+								<li><img src="../../imagesTemp/picLecture/pic1.jpg" alt="" /></li>
+								<li><img src="../../imagesTemp/picLecture/pic2.jpg" alt="" /></li>
+								<li><img src="../../imagesTemp/picLecture/pic3.jpg" alt="" /></li>
+								<li><img src="../../imagesTemp/picLecture/pic4.jpg" alt="" /></li>
+								<li><img src="../../imagesTemp/picLecture/pic5.jpg" alt="" /></li>
+							</ul>
+						</div>
+						<div class="btns">
+							<a href="javascript:void(0);" class="leftBtn"></a>
+							<a href="javascript:void(0);" class="rightBtn"></a>
+						</div>
+						<div class="desc clearfix">
+							<div class="left num">
+								<span class="current">1</span>
+								<span class="total">35</span>
+							</div>
+							<textarea type="text" placeholder="点击此处添加图片描述"></textarea>
+							<!-- <span class="left text">讲座描述啊啊啊讲座描述啊啊啊讲座描述啊啊啊讲座描述啊啊啊讲座描述啊啊啊讲座描述啊啊啊讲座描述啊啊啊讲座描述啊啊啊讲座描述啊啊啊讲座描述啊啊啊讲座描述啊啊啊讲座描述啊啊啊</span> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="picManage">
+			<div class="w1310pxAuto">
+				<div class="hd clearfix">
+					<div class="left btnGroup clearfix">
+						<a href="" class="btn1">新建分组</a>
+						<span class="left line"></span>
+						<a href="">批量转移</a>
+						<a href="">批量删除</a>
+					</div>
+					<div class="right">
+						<span>（已上传 <i>34</i> 张图片）</span>
+					</div>
+				</div>
+				<div class="bd">
+					<div class="group">
+						<div class="group-item">
+							<div class="group-info">
+								<div class="group-title clearfix">
+									<span class="left name">小一班绘画作品呀呀呀呀呀</span>
+									<span class="left icon-group clearfix">
+										<a href="javascript:;" class="icon-edit"></a>
+										<a href="javascript:;" class="icon-del"></a>
+										<a href="javascript:;" class="icon-up"></a>
+										<a href="javascript:;" class="icon-down"></a>
+									</span>
+									<span class="right checkbox">
+										<label><input type="checkbox">全选</label>
+									</span>
+								</div>
+								<div class="group-desc">
+									小一班绘画作品，包括肖像画、简笔画、风景画等，小一班绘画作品，包括肖像画、简笔画、风景画等，小一班绘画作品，包括肖像画、简笔画、风景画等，小一班绘画作品小一班绘画作品，包括肖像画、简笔画、风景画等，小一班绘画作品，包括肖像画、简笔画、风景画等，小一班绘画作品，包括肖像画、简笔画、风景画等，小一班绘画作品
+								</div>
+							</div>
+							<ul class="list clearfix">
+								<li class="add">添加图片</li>
+								<li>
+									<img src="../../imagesTemp/picLecture/group-cover4.jpg" alt="">
+									<div class="con">
+										<h4>小一班绘画作品</h4>
+										<p>小一班绘画作品</p>
+									</div>
+									<div class="text">
+										小2班 张晓红作品小2班张晓红作品张晓红作品小2班张晓红作品  
+									</div>
+									<div class="icon-group clearfix">
+										<a href="javascript:;" class="icon-transfer"></a>
+										<a href="javascript:;" class="icon-edit"></a>
+										<a href="javascript:;" class="icon-rotate"></a>
+										<a href="javascript:;" class="icon-del"></a>
+									</div>
+									<span class="icon-select cur"></span>
+								</li>
+								<li>
+									<img src="../../imagesTemp/picLecture/pic1.jpg" alt="">
+									<div class="icon-group clearfix">
+										<a href="javascript:;" class="icon-transfer"></a>
+										<a href="javascript:;" class="icon-edit"></a>
+										<a href="javascript:;" class="icon-rotate"></a>
+										<a href="javascript:;" class="icon-del"></a>
+									</div>
+									<span class="icon-select "></span>
+								</li>
+								<li>
+									<img src="../../imagesTemp/picLecture/pic1.jpg" alt="">
+									<div class="icon-group clearfix">
+										<a href="javascript:;" class="icon-transfer"></a>
+										<a href="javascript:;" class="icon-edit"></a>
+										<a href="javascript:;" class="icon-rotate"></a>
+										<a href="javascript:;" class="icon-del"></a>
+									</div>
+									<span class="icon-select"></span>
+								</li>
+								<li>
+									<img src="../../imagesTemp/picLecture/pic1.jpg" alt="">
+									<div class="text">
+										小2班 张晓红作品小2班张晓红作品张晓红作品小2班张晓红作品  
+									</div>
+									<div class="icon-group clearfix">
+										<a href="javascript:;" class="icon-transfer"></a>
+										<a href="javascript:;" class="icon-edit"></a>
+										<a href="javascript:;" class="icon-rotate"></a>
+										<a href="javascript:;" class="icon-del"></a>
+									</div>
+									<span class="icon-select "></span>
+								</li>	
+							</ul>
+						</div>
+						<div class="group-item">
+							<div class="group-info">
+								<div class="group-title clearfix">
+									<span class="left name">小一班绘画作品呀呀呀呀呀</span>
+									<span class="left icon-group clearfix">
+										<a href="javascript:;" class="icon-edit"></a>
+										<a href="javascript:;" class="icon-del"></a>
+										<a href="javascript:;" class="icon-up"></a>
+										<a href="javascript:;" class="icon-down"></a>
+									</span>
+									<span class="right checkbox">
+										<label><input type="checkbox">全选</label>
+									</span>
+								</div>
+							</div>
+							<ul class="list clearfix">
+								<li class="add">添加图片</li>
+								<li>
+									<img src="../../imagesTemp/picLecture/pic1.jpg" alt="">
+									<div class="text">
+										小2班 张晓红作品小2班张晓红作品张晓红作品小2班张晓红作品  
+									</div>
+									<div class="icon-group clearfix">
+										<a href="javascript:;" class="icon-transfer"></a>
+										<a href="javascript:;" class="icon-edit"></a>
+										<a href="javascript:;" class="icon-rotate"></a>
+										<a href="javascript:;" class="icon-del"></a>
+									</div>
+									<span class="icon-select cur"></span>
+								</li>
+								<li>
+									<img src="../../imagesTemp/picLecture/pic1.jpg" alt="">
+									<div class="icon-group clearfix">
+										<a href="javascript:;" class="icon-transfer"></a>
+										<a href="javascript:;" class="icon-edit"></a>
+										<a href="javascript:;" class="icon-rotate"></a>
+										<a href="javascript:;" class="icon-del"></a>
+									</div>
+									<span class="icon-select "></span>
+								</li>
+								<li>
+									<img src="../../imagesTemp/picLecture/pic1.jpg" alt="">
+									<div class="icon-group clearfix">
+										<a href="javascript:;" class="icon-transfer"></a>
+										<a href="javascript:;" class="icon-edit"></a>
+										<a href="javascript:;" class="icon-rotate"></a>
+										<a href="javascript:;" class="icon-del"></a>
+									</div>
+									<span class="icon-select"></span>
+								</li>
+								<li>
+									<img src="../../imagesTemp/picLecture/pic1.jpg" alt="">
+									<div class="text">
+										小2班 张晓红作品小2班张晓红作品张晓红作品小2班张晓红作品  
+									</div>
+									<div class="icon-group clearfix">
+										<a href="javascript:;" class="icon-transfer"></a>
+										<a href="javascript:;" class="icon-edit"></a>
+										<a href="javascript:;" class="icon-rotate"></a>
+										<a href="javascript:;" class="icon-del"></a>
+									</div>
+									<span class="icon-select "></span>
+								</li>
+								<li>
+									<img src="../../imagesTemp/picLecture/pic1.jpg" alt="">
+									<div class="text">
+										小2班 张晓红作品小2班张晓红作品张晓红作品小2班张晓红作品  
+									</div>
+									<div class="icon-group clearfix">
+										<a href="javascript:;" class="icon-transfer"></a>
+										<a href="javascript:;" class="icon-edit"></a>
+										<a href="javascript:;" class="icon-rotate"></a>
+										<a href="javascript:;" class="icon-del"></a>
+									</div>
+									<span class="icon-select cur"></span>
+								</li>
+								<li>
+									<img src="../../imagesTemp/picLecture/pic1.jpg" alt="">
+									<div class="icon-group clearfix">
+										<a href="javascript:;" class="icon-transfer"></a>
+										<a href="javascript:;" class="icon-edit"></a>
+										<a href="javascript:;" class="icon-rotate"></a>
+										<a href="javascript:;" class="icon-del"></a>
+									</div>
+									<span class="icon-select "></span>
+								</li>
+								<li>
+									<img src="../../imagesTemp/picLecture/pic1.jpg" alt="">
+									<div class="icon-group clearfix">
+										<a href="javascript:;" class="icon-transfer"></a>
+										<a href="javascript:;" class="icon-edit"></a>
+										<a href="javascript:;" class="icon-rotate"></a>
+										<a href="javascript:;" class="icon-del"></a>
+									</div>
+									<span class="icon-select"></span>
+								</li>
+								<li>
+									<img src="../../imagesTemp/picLecture/pic1.jpg" alt="">
+									<div class="text">
+										小2班 张晓红作品小2班张晓红作品张晓红作品小2班张晓红作品  
+									</div>
+									<div class="icon-group clearfix">
+										<a href="javascript:;" class="icon-transfer"></a>
+										<a href="javascript:;" class="icon-edit"></a>
+										<a href="javascript:;" class="icon-rotate"></a>
+										<a href="javascript:;" class="icon-del"></a>
+									</div>
+									<span class="icon-select "></span>
+								</li>	
+							</ul>
+						</div>
+						<div class="group-item">
+							<div class="group-info">
+								<div class="group-title clearfix">
+									<span class="left name">小一班绘画作品呀呀呀呀呀</span>
+									<span class="left icon-group clearfix">
+										<a href="javascript:;" class="icon-edit"></a>
+										<a href="javascript:;" class="icon-del"></a>
+										<a href="javascript:;" class="icon-up"></a>
+										<a href="javascript:;" class="icon-down"></a>
+									</span>
+									<span class="right checkbox">
+										<label><input type="checkbox">全选</label>
+									</span>
+								</div>
+							</div>
+							<ul class="list clearfix">
+								<li class="add">添加图片</li>
+								<li>
+									<img src="../../imagesTemp/picLecture/pic1.jpg" alt="">
+									<div class="text">
+										小2班 张晓红作品小2班张晓红作品张晓红作品小2班张晓红作品  
+									</div>
+									<div class="icon-group clearfix">
+										<a href="javascript:;" class="icon-transfer"></a>
+										<a href="javascript:;" class="icon-edit"></a>
+										<a href="javascript:;" class="icon-rotate"></a>
+										<a href="javascript:;" class="icon-del"></a>
+									</div>
+									<span class="icon-select cur"></span>
+								</li>
+								<li>
+									<img src="../../imagesTemp/picLecture/pic1.jpg" alt="">
+									<div class="icon-group clearfix">
+										<a href="javascript:;" class="icon-transfer"></a>
+										<a href="javascript:;" class="icon-edit"></a>
+										<a href="javascript:;" class="icon-rotate"></a>
+										<a href="javascript:;" class="icon-del"></a>
+									</div>
+									<span class="icon-select "></span>
+								</li>
+								<li>
+									<img src="../../imagesTemp/picLecture/pic1.jpg" alt="">
+									<div class="icon-group clearfix">
+										<a href="javascript:;" class="icon-transfer"></a>
+										<a href="javascript:;" class="icon-edit"></a>
+										<a href="javascript:;" class="icon-rotate"></a>
+										<a href="javascript:;" class="icon-del"></a>
+									</div>
+									<span class="icon-select"></span>
+								</li>
+								<li>
+									<img src="../../imagesTemp/picLecture/pic1.jpg" alt="">
+									<div class="text">
+										小2班 张晓红作品小2班张晓红作品张晓红作品小2班张晓红作品  
+									</div>
+									<div class="icon-group clearfix">
+										<a href="javascript:;" class="icon-transfer"></a>
+										<a href="javascript:;" class="icon-edit"></a>
+										<a href="javascript:;" class="icon-rotate"></a>
+										<a href="javascript:;" class="icon-del"></a>
+									</div>
+									<span class="icon-select "></span>
+								</li>
+								<li>
+									<img src="../../imagesTemp/picLecture/pic1.jpg" alt="">
+									<div class="text">
+										小2班 张晓红作品小2班张晓红作品张晓红作品小2班张晓红作品  
+									</div>
+									<div class="icon-group clearfix">
+										<a href="javascript:;" class="icon-transfer"></a>
+										<a href="javascript:;" class="icon-edit"></a>
+										<a href="javascript:;" class="icon-rotate"></a>
+										<a href="javascript:;" class="icon-del"></a>
+									</div>
+									<span class="icon-select cur"></span>
+								</li>
+								<li>
+									<img src="../../imagesTemp/picLecture/pic1.jpg" alt="">
+									<div class="icon-group clearfix">
+										<a href="javascript:;" class="icon-transfer"></a>
+										<a href="javascript:;" class="icon-edit"></a>
+										<a href="javascript:;" class="icon-rotate"></a>
+										<a href="javascript:;" class="icon-del"></a>
+									</div>
+									<span class="icon-select "></span>
+								</li>
+								<li>
+									<img src="../../imagesTemp/picLecture/pic1.jpg" alt="">
+									<div class="icon-group clearfix">
+										<a href="javascript:;" class="icon-transfer"></a>
+										<a href="javascript:;" class="icon-edit"></a>
+										<a href="javascript:;" class="icon-rotate"></a>
+										<a href="javascript:;" class="icon-del"></a>
+									</div>
+									<span class="icon-select"></span>
+								</li>
+								<li>
+									<img src="../../imagesTemp/picLecture/pic1.jpg" alt="">
+									<div class="text">
+										小2班 张晓红作品小2班张晓红作品张晓红作品小2班张晓红作品  
+									</div>
+									<div class="icon-group clearfix">
+										<a href="javascript:;" class="icon-transfer"></a>
+										<a href="javascript:;" class="icon-edit"></a>
+										<a href="javascript:;" class="icon-rotate"></a>
+										<a href="javascript:;" class="icon-del"></a>
+									</div>
+									<span class="icon-select "></span>
+								</li>	
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<div class="rightbar"><a href="javascript:;" class="btn-edit"></a></div>
+		</div>
+		<script src="../../js/public/jquery-1.8.2.min.js"></script>
+		<script src="../../js/public/placeholder.js"></script>
+		<script src="../../js/public/jquery.mCustomScrollbar.min.js"></script>
+		<script src="../../js/picLecture/carousel.js"></script>
+		<script src="../../js/picLecture/jquery-migrate-1.1.1.js"></script>
+		<script src="../../js/picLecture/jquery.dragsort-0.5.1.min.js"></script>
+		<script src="../../js/picLecture/picLecture.js"></script>
+		<script>
+			$(window).load(function(){
+
+				carousel(".display .picBox",2400,400);
+				// 图片拖拽排序
+				$(".picManage .list").dragsort({
+					dragSelector: "li",
+					dragBetween: true ,
+				});
+				// 滚动条
+				$(".listWrap").mCustomScrollbar({
+					theme:"dark"
+				});
+
+				$('.display .desc textarea').focus(function(){
+					$(this).addClass('active')
+				})
+				$('.display .desc textarea').blur(function(){
+					$(this).removeClass('active')
+				})
+
+			})
+		</script>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+/*支付*/
+.jtshopping .pay{ width:860px; margin:60px auto 76px;}
+.jtshopping .pay .info{ width:828px; padding:0 15px; height:124px; border:1px solid #CBCBCB; border-top:5px solid #F1782D; background-color:#ffffff; margin-bottom:20px;}
+.jtshopping .pay .info .name{ padding-top:32px; height:26px; margin-bottom:10px; }
+.jtshopping .pay .info .name .tit{ font-size:24px; font-family:"微软雅黑"; line-height:26px; color:#404040; margin-right:10px;}
+.jtshopping .pay .info .name .icon{ margin-top:10px; margin-right:13px;}
+.jtshopping .pay .info .name .icon img{ margin-right:7px;}
+.jtshopping .pay .info .author{ margin-top:10px; line-height:16px; color:#7F7F7F; font-size:14px;}
+.jtshopping .pay .info .order .left{ line-height:26px; color:#404040; font-family:"微软雅黑"; font-size:14px;}
+.jtshopping .pay .info .order .right{ line-height:26px;color:#404040; font-family:"微软雅黑"; font-size:14px;}
+.jtshopping .pay .info .order .right span{ font-weight:bold; font-size:20px; color:#f2792a;}
+.jtshopping .pay .payBox{ width:858px; border:1px solid #CBCBCB; background-color:#ffffff;}
+.jtshopping .pay .payBox .tnav{ position:relative; height:41px; border-bottom:1px solid #CACACA; background-color:#E5E5E5;}
+.jtshopping .pay .payBox .tnav .tab{border-right: 1px solid #CACACA;font-family:"微软雅黑"; font-size:16px; color:#404040; width:120px; text-align:center; line-height:41px; text-decoration:none;}
+.jtshopping .pay .payBox .tnav .tab.cur{margin-left:-1px; margin-right:-1px; margin-top:-1px;background-color:#ffffff; border-top:5px solid #F1782D; color:#F1782D; border-left:1px solid #CACACA; border-right:1px solid #CACACA; height:38px; line-height:36px;}
+.jtshopping .pay .payBox .tnav span{ margin-top:7px; width:0px; font-size:0; border-left:1px solid #CBCBCB; height:27px;}
+.jtshopping .pay .payBox .tnav .syfp{ position:absolute; right:19px; line-height:41px; color:#1a83ee;}
+.jtshopping .pay .payBox .tabcont{ display:none;}
+.jtshopping .pay .payBox .kj{ padding-top:74px; padding-left:114px; height:304px;}
+.jtshopping .pay .payBox .kj a{ height:181px; width:276px; text-align:center; color:#404040;font-family:"微软雅黑"; font-size:18px; text-decoration:none; margin-right:74px; padding-top:47px; }
+.jtshopping .pay .payBox .kj a p{ line-height:72px; text-align:center;}
+.jtshopping .pay .payBox .kj .wechat{ background-color:#E7FAE8; border:1px solid #0FB219; border-radius:3px;}
+.jtshopping .pay .payBox .kj .alipay{ background-color:#E8F8FF; border:1px solid #0BAAED; border-radius:3px;}
+.jtshopping .pay .payBox .common{ padding:60px 47px 0; height:318px;}
+.jtshopping .pay .payBox .common p{ padding-left:18px; line-height:28px; font-size:14px; background:url(../../images/jtshopping/jtshopping-icon1.gif) no-repeat left center; margin-bottom:18px;}
+.jtshopping .pay .payBox .common .box{ padding-left:30px; padding-top:37px; height:169px; width:733px; background-color:#F1F7FF;}
+.jtshopping .pay .payBox .common .box img{ border:2px solid #F0413D; margin-bottom:14px; }
+.jtshopping .pay .payBox .common .box .btn{ display:block; width:240px; height:41px; line-height:41px; text-align:center; color:#ffffff;font-family:"微软雅黑"; font-size:20px; text-decoration:none; background-color:#F0413D;}
+/*支付模态框*/
+.payPop{ width:290px; height:400px; box-shadow:0 0 6px rgba(0,0,0,0.3); background-color:#ffffff; position:relative;}
+.payPop .close{ position:absolute; width:11px; height:11px; top:17px; right:7px; background:url(../../images/jtshopping/jtshopping-close.png) no-repeat;}
+.payPop .head{ height:74px; line-height:74px;font-family:"微软雅黑"; font-size:18px; }
+.payPop p{ line-height:35px; background-color:#E5E5E5; text-align:center; margin-bottom:27px;}
+.payPop .ewm{ text-align:center; margin-bottom:28px;}
+.payPop .btn{ display:block; width:230px; height:35px; line-height:35px; text-align:center; color:#ffffff; text-decoration:none; margin:0 auto; font-size:14px;}
+.payPop.wechat{ border-top:10px solid #0FB319;}
+.payPop.alipay{ border-top:10px solid #0BAAED;}
+.payPop.wechat .head{ padding-left:125px; background: url(../../images/jtshopping/jtshopping-wxsmall.gif) no-repeat 72px center;}
+.payPop.alipay .head{ padding-left:118px; background:url(../../images/jtshopping/jtshopping-zfbsmall.gif) no-repeat 65px center;}
+.payPop.wechat .btn{ background-color:#0FB319;}
+.payPop.alipay .btn{ background-color:#0BAAED;}
+.zzcl{ width:130px; height:33px; box-shadow:0 0 5px rgba(0,0,0,0.2);}
+.payYl{ width:460px; border-top:3px solid #3B87D4; position:relative; background-color:#ffffff;}
+.payYl .close{ position:absolute; width:11px; height:11px; top:10px; right:10px; background:url(../../images/jtshopping/jtshopping-close.png) no-repeat;}
+.payYl h1{ line-height:33px; background-color:#ECF5FF; color:#3B87D4; font-size:14px; padding-left:10px;}
+.payYl .box{ padding-top:15px; padding-bottom:20px;}
+.payYl .box .p1{ line-height:26px; font-size:14px; text-align:center;}
+.payYl .box .p2{ line-height:34px; color:#989898; padding-left:163px; background:url(../../images/jtshopping/jtshopping-tip.gif) no-repeat 144px center; margin-bottom:10px;}
+.payYl .box .btns{ height:31px; width:254px; margin:0 auto;}
+.payYl .box .btns .btn1{ width:86px; height:31px; line-height:31px; text-align:center; color:#ffffff; font-size:14px; font-weight:bold; background-color:#3B87D4; text-decoration:none;}
+.payYl .box .btns .btn2{ width:154px; height:29px; line-height:29px;text-align:center; border:1px solid #3B87D4; color:#3B87D4; font-size:14px; font-weight:bold;text-decoration:none;}	
+/*支付成功*/
+.paysuccess{ width:1190px; margin:58px auto; background-color:#ffffff;}
+.paysuccess .top{ padding-left:505px; padding-top:70px; margin:0 38px; border-bottom:1px solid #EAEAEA; background: url(../../images/jtshopping/jtshopping-cglogo.gif) no-repeat 403px 70px; padding-bottom:66px;}
+.paysuccess .top .p1{ font-family:"微软雅黑"; font-size:24px; font-weight:bold; line-height:52px;}
+.paysuccess .top .p2{ line-height:32px; font-size:14px;}
+.paysuccess .top .p2 a{ color:#146DD8; text-decoration:underline;}
+.paysuccess .chair{ padding:15px 21px 60px;}
+.paysuccess .chair h1{ font-size:14px; padding-left:10px;margin-left: 10px; border-left:6px solid #52AB37; line-height:28px; margin-bottom:17px;}
+.paysuccess .chair li{ float: left; _display: inline; width: 267px; height: 306px; margin: 0 10px 25px 10px; background-color: #fff; }
+.paysuccess .chair li .pic{ position: relative; display: block; height: 201px; overflow: hidden; }
+.badge { position: absolute; top: 10px; right: 10px; width: 70px; height: 30px; line-height: 30px; background: url(../../images/platform/bg1.png) no-repeat; text-align: center; color: #fff; }
+.paysuccess .chair li .intro{ padding: 2px 8px 6px 13px; border: 1px solid #efefef; }
+.paysuccess .chair li .title{ margin-top: 4px; font: 16px/30px "Microsoft Yahei"; }
+.paysuccess .chair li .date{ display: inline-block; vertical-align: middle; font-family: "Microsoft Yahei"; color: #a9a9a9; }
+.paysuccess .chair li .info{ height: 22px; line-height: 22px; padding: 8px 8px 8px 13px; border: 1px solid #efefef; border-top: none; color: #333; }
+.paysuccess .chair li .author{ display: inline-block; vertical-align: middle; color: #333; max-width: 130px; height: 22px; overflow: hidden; }
+.paysuccess .chair li .info img{ vertical-align: middle; width: 22px; height: 22px; margin-right: 9px; border-radius: 50%; }
+.paysuccess .chair li .info .icon { display: inline-block; padding-left: 22px; margin-left: 5px; background: url(../../images/platform/icon3.png) no-repeat left center; color: #999; }
+.paysuccess .chair li .info .previewNum { padding-left: 27px; }
+.paysuccess .chair li .info .collectionNum { padding-left: 16px; background-image: url(../../images/platform/icon4.png); }
+.payfail{ width:683px; margin:48px auto 200px; padding-top:92px; padding-left:177px; padding-bottom:80px; background:#ffffff url(../../images/jtshopping/jtshopping-sblogo.gif) no-repeat 57px 92px;} 
+.payfail h1{ font-family:"微软雅黑"; font-size:18px; line-height:28px; margin-bottom:15px; font-weight:normal; }
+.payfail p{ line-height:30px;}
+.payfail p a{ display: inline-block; *display:inline; *zoom:1; width:66px; height:25px; text-align:center; line-height:25px; color:#E5520D; text-decoration:none; margin:0 10px; background: url(../../images/jtshopping/jtshopping-sbbtn.png) no-repeat;}

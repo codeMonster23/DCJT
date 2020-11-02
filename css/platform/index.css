@@ -1,0 +1,96 @@
+/*
+* @Author: Administrator
+* @Date:   2017-07-26 11:12:20
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-11-10 15:09:42
+*/
+header{ box-shadow: none; }
+.banner{ width: 100%; height: 387px; position: relative; overflow: hidden; }
+.banner ul.imageList li{ position: absolute; top: 0; left: 0; width: 100%; height: 387px; display: none; }
+.banner ul.imageList li img{ position: absolute; top: 0; left: 50%; margin-left: -960px; }
+.banner ul.imageList li.no0{ display: block; }
+.banner .bg{ position: absolute; top:40px; right:0; width: 253px; height: 334px; z-index:10; }
+.banner .bg .btn{ position: absolute; left:50%; margin-left: -66px; bottom: 22px; width: 132px; height: 46px; background: url(../../images/platform/index-banner-btn.png) no-repeat; }
+.banner .bg .btn:hover{ background: url(../../images/platform/index-banner-btn-a.png)  no-repeat; }
+.banner ol.circleList{ position: absolute; bottom: 10px; left: 50%; margin-left: -30px; width: 60px; height: 20px; }
+.banner ol.circleList li{ float: left; width: 10px; height: 10px; background-color: #fff; margin-right: 10px; border-radius: 50%; cursor: pointer; }
+.banner ol.circleList li.cur{ background-color: #fd6801; }
+.topColumn{ padding: 33px 0 16px; background-color: #fff; }
+.topColumn li{ float: left; width: 280px; margin-right: 25px; cursor: pointer; }
+.topColumn li.last,.lecture .module li.last,.lecture-talent li.last{ margin-right: 0; }
+.topColumn li .pic{ position: relative; display: block; height: 138px; overflow: hidden; }
+.topColumn li .bg{ position: absolute; left:0; bottom: 0; width: 280px; height: 24px; background-color: #000; opacity:0.4; filter: alpha(opacity=40); }
+.topColumn li .intro{ position: absolute; left:0; bottom: 0; width: 260px; padding: 0 10px; line-height: 24px; color: #fff; }
+.topColumn li .intro span{ color: #fff; }
+.topColumn li .title{ font: 16px/44px "Microsoft Yahei"; text-align: center; }
+.topColumn li .title a{ color: #0f4879; }
+.lecture .leftWrap{ width: 892px; }
+.lecture .rightWrap{ width: 280px; }
+.main .module{ margin-top: 18px; }
+.main .module-hd{ font: 22px/64px "Microsoft Yahei"; color: #333; }
+.main .module-hd .right{ font-size: 14px; color: #333; }
+.main .module-hd .change{ padding-left: 26px; background: url(../../images/platform/icon1.png) left center no-repeat; }
+.lecture .module li{ float: left; width: 280px; height: 282px; margin-right: 26px; background-color: #fff; cursor: pointer; }
+.lecture .module li .pic{ position: relative; display: block; width: 280px; height: 210px; overflow: hidden; }
+.lecture .module li .badge{ position: absolute; top:10px; right:10px; width: 70px; height: 30px; line-height: 30px; background: url(../../images/platform/bg1.png) no-repeat; text-align: center; color: #fff; }
+.lecture .module li img{ display: block; width: 100%; height: 210px; }
+.lecture .module li .intro{ padding: 0 8px; font-size: 14px; }
+.lecture .module li .title{ padding: 18px 0 10px; font-weight: bold; }
+.lecture .module li .title a{ color: #0f4879; }
+.lecture .module li .author a{ color: #999; }
+.lecture .module-hd .category-nav{ margin-left: 20px; }
+.lecture .module-hd .category-nav a{ float: left; line-height: 30px; padding: 0 10px; margin:17px 5px; font-size: 14px; color: #666; }
+.lecture .module-hd .category-nav a:hover{ color: #fd6801; }
+.lecture .module-hd .category-nav a.active{ border-radius: 15px; background-color: #fd6801; color: #fff; }
+.lecture .new .module-bd li{ margin-bottom: 26px; }
+.lecture .rightWrap .module-bd{ background-color: #fff; }
+.lecture .rightWrap .module-bd .item{ padding: 0 6px; }
+.lecture .rightWrap .module dl{ padding: 13px 15px; border-bottom: 1px solid #efefef; cursor: pointer; overflow: hidden; _zoom:1; }
+.lecture .rightWrap .module .item:hover{ background-color: #f6f6f6; }
+.lecture .rightWrap .hot dl{ padding: 14px 15px; }
+.lecture .rightWrap .module dt,.lecture .rightWrap .module dd{ float: left; }
+.lecture .rightWrap .module dt{ position: relative; width: 90px; height: 67px; margin-right: 10px; }
+.lecture .rightWrap .module dt img{ display: block; }
+.lecture .rightWrap .module dt i{ position: absolute; left:0; top:0; width: 16px; height: 25px; background: url(../../images/platform/rank1.png) no-repeat; }
+.lecture .rightWrap .module dt .rank2{ background-image: url(../../images/platform/rank2.png); }
+.lecture .rightWrap .module dt .rank3{ background-image: url(../../images/platform/rank3.png); }
+.lecture .rightWrap .module dd{ width: 135px; padding-top: 5px; line-height: 24px; color: #333; }
+.lecture .rightWrap .free-lecture{ margin-top: 13px; }
+.topColumn img,.lecture .module img{ transition: all 1s; }
+.topColumn li:hover img,.lecture .module li:hover img{ transform: scale(1.2,1.2); }
+.topColumn li:hover .title a,.lecture .module li:hover .title a{ color: #fd6801; }
+.main .module.active-speaker{ margin-top: 0; }
+.active-speaker .applyAddBtn{ width: 100px; height: 36px; margin:14px 0 0 14px; border-radius: 5px; text-align: center; font: 16px/36px "Microsoft Yahei"; color: #fff; }
+.active-speaker .module-bd{ padding: 24px 10px 0; border-bottom: 1px solid #ebebeb; background-color: #fff; box-shadow: 0 3px 10px rgba(0,0,0,0.3); }
+.active-speaker li{ float: left; _display: inline; width: 101px; margin: 0 15px; text-align: center; }
+.active-speaker li .pic{ position: relative; display: block; width: 101px; height: 101px; }
+.active-speaker li img{ position: absolute; left:0; top:0; height: 101px; border-radius: 50%; transition:all 1s; backface-visibility:hidden; }
+.active-speaker li .img2{ transform:rotateY(-180deg); }
+.active-speaker .pic:hover .img1{ transform:rotateY(180deg); }
+.active-speaker .pic:hover .img2{ transform:rotateY(0deg); }
+.active-speaker li p{ line-height: 44px; margin-bottom: 12px; font-size: 14px; }
+.active-speaker li p a{ color: #666; }
+.lecture-talent{ margin-bottom: 62px; }
+.lecture-talent li{ float: left; width: 372px; /* height: 390px;  */padding: 10px 0 0 18px; margin-right: 14px; background-color: #fff; font-size: 14px; color: #999; }
+.lecture-talent-hd{ position: relative; margin-bottom: 17px; margin-right: 16px; }
+.lecture-talent-hd dt,.lecture-talent-hd dd{ float: left; }
+.lecture-talent-hd dt{ width: 64px; height: 64px; margin-right: 13px; }
+.lecture-talent-hd dt img{ border-radius: 50%; }
+.lecture-talent-hd .name{ padding: 13px 0; }
+.lecture-talent-hd .name a{ color: #333; }
+.lecture-talent-hd .label{ padding-left: 26px; background: url(../../images/platform/icon2.png) left center no-repeat; }
+.lecture-talent-hd .label a{padding: 0 3px; color: #999; }
+.lecture-talent-hd dd .attentionBtn{ position: absolute; top:0; right:0;width: 44px;height: 21px;line-height: 21px;font-size: 12px;}
+.btn.grey{ border-color: #999 !important; background-color: #999 !important; color: #fff !important; }
+.lecture-talent-bd a{display: block;line-height: 30px;color: #006eeb;}
+.lecture-talent-bd a:hover{color: #f97540;}
+/* .lecture-talent-bd img{ float: left; width: 172px; height: 129px; margin-right: 12px; margin-top: 10px; } */
+.lecture-talent-ft{ line-height: 42px; padding-right: 16px; }
+.lecture-talent-ft .more{ color: #2a8eff; }
+.lecture-talent-ft .icon{ padding-left: 27px; background: url(../../images/platform/icon3.png) no-repeat left center; color: #999; }
+.lecture-talent-ft .icon:hover{ background-image: url(../../images/platform/icon3-a.png); color: #fd6801; }
+.lecture-talent-ft .collectionNum{ padding-left: 20px; margin-left: 12px; background-image: url(../../images/platform/icon4.png); cursor: pointer; } 
+.lecture-talent-ft .collectionNum:hover,.lecture-talent-ft .collectionNum.active{ background-image: url(../../images/platform/icon4-a.png); }
+.lecture .rightWrap .item:hover dd,.lecture .module .intro a:hover,.topColumn a:hover,.active-speaker li a:hover,.lecture-talent-hd .name a:hover,.lecture-talent-hd .label a:hover{ color: #fd6801 !important; }
+.noresult{ height: 45px; padding-top: 170px; margin-bottom: 15px; background: #fff url(../../images/platform/noresult.png) center 36px no-repeat; font-size: 16px; font-family: "Microsoft Yahei"; text-align: center; color: #545454; }
+

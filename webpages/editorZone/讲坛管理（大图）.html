@@ -1,0 +1,275 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="../../css/public/public.css">
+        <link rel="stylesheet" href="../../css/public/header-and-footer.css">
+        <link rel="stylesheet" href="../../css/editorZone/e_creatZone.css">
+        <script type="text/javascript" src="../../js/public/jquery-1.8.2.min.js"></script>
+    </head>
+    <body bgcolor="#ccc">
+        <div class="header">
+            <div class="width1200pxAuto clearfix">
+                <div class="left clearfix">
+                    <div class="left ez-logo"><a href=""></a></div><div class="left ecZoneLogo"><a href="">讲坛创作空间</a></div>
+                    <div class="left nav">
+                        <ul>
+                            <li><a href="" class="nav-item" target="_blank" >首页</a></li>
+                            <li><a href="" class="nav-item" target="_blank">我的讲坛</a></li>
+                            <li><a href="" class="nav-item" target="_blank">个人中心</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right clearfix">
+                    <div class="left loginWrap">
+                        <div class="user dropdown">
+                            <p class="dropdown-toggle clearfix"><span class="user-avatar positionR"><img src="../../images/platform/user-avatar.png" height="30" width="30" alt=""><i>···</i></span><span class="username">这个是我的名字</span></p>
+                            <ul class="dropdown-menu">
+                                <li><a href="">创作空间</a></li>
+                                <li class="personalCenter"><a href="">个人中心</a></li>
+                                <li class="homepage"><a href="">我的主页</a></li>
+                                <li class="msg"><a href="">我的消息<i></i></a></li>
+                                <li class="quit"><a href="">退出登陆</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="main">
+            <div class="width1200pxAuto ecZone clearfix">
+                <div class="ecSideMenu left">
+                    <div class="editorIntro">
+                        <a href="javascript:void(0);" class="headImage"><img src="../../imagesTemp/editorZone/ec1-avatar.jpg" width="96" height="96" /></a>
+                        <div class="shortIntro positionR">
+                            <p class="userName">Chrissy阿西</p>
+                            <div class="text-box">律师 | 北京雨仁（上海）律师事务所</div>
+                        </div>
+                    </div>
+                    <div class="sideBtn">
+                        <a href="#" class="btn1">发布讲座</a>
+                        <a href="#" class="btn2">创建栏目</a>
+                    </div>
+                    <div class="sidenav">
+                        <div class="item1 c_section cur">
+                            <h1><a href="#">讲座管理</a></h1>
+                        </div>
+                        <div class="item2 c_section">
+                            <h1><a href="#">栏目管理</a></h1>
+                        </div>
+                        <div class="item3  c_section">
+                             <h1><a href="#">素材管理</a></h1>
+                        </div>
+                        <div class="item4 c_section">
+                            <h1><a href="#">账户管理</a></h1>
+                        </div>
+                        <div class="item5 c_section">
+                            <h1><a href="#">个人资料</a></h1>
+                        </div>
+                        <div class="item6 c_section">
+                            <h1><a href="#">消息中心</a></h1>
+                        </div>
+                    </div>
+                    <div class="banner">
+                        <button></button>
+                    </div>
+                </div>
+                <div class="myFrame left">
+                    <div class="topInfo clearfix"><span>当前位置：<a href="#">首页</a> &gt; 讲座管理</span></div>
+                    <div class="tab_s clearfix">
+                        <a href="javascript:void(0)" class="left">全部讲座</a>
+                        <a href="javascript:void(0)" class="active left">已发布</a>
+                        <a href="javascript:void(0)" class="left">审核中</a>
+                        <a href="javascript:void(0)" class="left">返回修改</a>
+                        <a href="javascript:void(0)" class="left">草稿箱</a>
+                        <a href="javascript:void(0)" class="left">已下架</a>
+                    </div>
+                    <div class="detailWrap">
+                        <div class="wrap_i clearfix">
+                            <div class="operation left ">
+                                <div class="eClassify left">
+                                    <p>讲座类型</p>
+                                    <ul>
+                                        <li><a href="javascript:void(0)">全部讲座</a></li>
+                                        <li><a href="javascript:void(0)">图文讲座</a></li>
+                                        <li><a href="javascript:void(0)">视频讲座</a></li>
+                                        <li><a href="javascript:void(0)">音频讲座</a></li>
+                                    </ul>
+                                </div>
+                                <div class="eClassify left">
+                                    <p>按时间排序</p>
+                                    <ul>
+                                        <li><a href="javascript:void(0)">按创建时间排序</a></li>
+                                        <li><a href="javascript:void(0)">按浏览量排序</a></li>
+                                        <li><a href="javascript:void(0)">按收藏量排序</a></li>  
+                                    </ul>
+                                </div>
+                                <script>
+                                                        (function(){
+                                                            var flag=false;
+                                                            var timer;
+                                                            $("body").click(function(){
+                                                            $(".eClassify ul").hide()
+                                                            $(".eClassify").removeClass("eClassify-c")
+                                                            })
+                                                            $(".eClassify p").click(
+                                                            function(event){
+                                                            $(this).parent(".eClassify").addClass("eClassify-c")
+                                                            $(this).siblings("ul").show()
+                                                            event.stopPropagation()})
+                                                            
+                                                            $(".eClassify p").hover(
+                                                                function(){
+                                                                    if($(".eClassify ul").css("display")=="block" && flag==true){
+                                                                            clearInterval(timer);
+                                                                            $(".eClassify").addClass("eClassify-c")
+                                                                            $(".eClassify ul").css({"display":"block"})}
+                                                            else{$(".eClassify").addClass("eClassify-c")}
+                                                                },
+                                                                function(){
+                                                                    if($(".eClassify ul").css("display")=="none"){
+                                                                    $(".eClassify").removeClass("eClassify-c")
+                                                                    }})
+                                                                $(".eClassify ul").hover(function(){
+                                                                        $(this).css({"display":"block"})},
+                                                                        function(){
+                                                                            flag=true;
+                                                                        timer=setTimeout(function()
+                                                                        {
+                                                                            $(".eClassify ul").css({"display":"none"});
+                                                                            $(".eClassify ul").parent(".eClassify").removeClass("eClassify-c");
+                                                                        },100)})
+                                                                    $(".eClassify ul a").click(
+                                                                        function(){
+                                                                        var Text1= $(this).text()
+                                                                            $(".eClassify p").text(Text1)
+                                                                        $(this).parents("ul").hide().parent(".eClassify").removeClass("eClassify-c")
+                                                                            })
+                                                                })()
+                                </script>
+                            </div>
+                            <div class="mode left"><a href="javascript:void(0)" class="left pic-c"></a><a href="javascript:void(0)" class="right list"></a></div>
+                        </div>
+                    </div>
+                    <div class="picShow clearfix">
+                        <dl class="subject">
+                            <dt><a href="#" target="_blank" title=""><img src="../../imagesTemp/editorZone/ez-Temp1.jpg" width="272" height="198" /></a></dt>
+                            <dd><a class="caption" href="#" target="_blank" title="">拒绝的智慧</a></dd>
+                            <dd class="readers c1"><span class="left ysq"><img src="../../images/editorZone/sq_icon.png" width="18" height="21" /></span><span class="right"><a href="javascript:void(0)" class="cs">参赛</a> | <a href="#">预览</a> | <a href="#">下架</a></span></dd>
+                            <dd class="checked">已审核</dd>
+                        </dl>
+                        <dl class="subject">
+                            <dt><a href="#" target="_blank" title=""><img src="../../imagesTemp/editorZone/ez-Temp2.jpg" width="272" height="198" /></a></dt>
+                            <dd><a class="caption" href="#" target="_blank" title="">拒绝的智慧</a></dd>
+                            <dd class="readers c2"><span class="left ysq"><img src="../../images/editorZone/sq_icon.png" width="18" height="21" /></span><span class="right"><a href="#">预览</a> | <a href="#">撤回</a></span></dd>
+                            <dd class="checked">待审核</dd>
+                        </dl>
+                        <dl class="subject">
+                            <dt><a href="#" target="_blank" title=""><img src="../../imagesTemp/editorZone/ez-Temp1.jpg" width="272" height="198" /></a></dt>
+                            <dd><a class="caption" href="#" target="_blank" title="">拒绝的智慧</a></dd>
+                            <dd class="readers c3"><span class="left wsq"><img src="../../images/editorZone/wsq_icon.png" width="18" height="21"/></span><span class="right"><a href="#">编辑</a> | <a href="#">删除</a></span></dd>
+                            <dd class="checked">草稿箱</dd>
+                        </dl>
+                        <dl class="subject">
+                            <dt><a href="#" target="_blank" title=""><img src="../../imagesTemp/editorZone/ez-Temp1.jpg" width="272" height="198" /></a></dt>
+                            <dd><a class="caption" href="#" target="_blank" title="">拒绝的智慧</a></dd>
+                            <dd class="readers c1"><span class="left ysq"><img src="../../images/editorZone/sq_icon.png" width="18" height="21" /></span><span class="right"><a href="#">查看意见</a> | <a href="#">编辑</a> | <a href="#">删除</a></span></dd>
+                            <dd class="checked">返回修改</dd>
+                        </dl>
+                        <dl class="subject">
+                            <dt><a href="#" target="_blank" title=""><img src="../../imagesTemp/editorZone/ez-Temp1.jpg" width="272" height="198" /></a></dt>
+                            <dd><a class="caption" href="#" target="_blank" title="">拒绝的智慧</a></dd>
+                            <dd class="readers c3"><span class="left ysq"><img src="../../images/editorZone/sq_icon.png" width="18" height="21" /></span><span class="right"><a href="#">查看已参赛</a> | <a href="#">编辑</a> | <a href="#">删除</a></span></dd>
+                            <dd class="checked">已审核</dd>
+                        </dl>
+                        <dl class="subject">
+                            <dt><a href="#" target="_blank" title=""><img src="../../imagesTemp/editorZone/ez-Temp1.jpg" width="272" height="198" /></a></dt>
+                            <dd><a class="caption" href="#" target="_blank" title="">拒绝的智慧</a></dd>
+                            <dd class="readers c3"><span class="left wsq"><img src="../../images/editorZone/sq_icon.png" width="18" height="21"/></span><span class="right"><a href="#">编辑</a> | <a href="#">删除</a></span></dd>
+                            <dd class="checked">草稿箱</dd>
+                        </dl>
+                        <dl class="subject">
+                            <dt><a href="#" target="_blank" title=""><img src="../../imagesTemp/editorZone/ez-Temp2.jpg" width="272" height="198" /></a></dt>
+                            <dd><a class="caption" href="#" target="_blank" title="">拒绝的智慧</a></dd>
+                            <dd class="readers c1"><span class="left ysq"><img src="../../images/editorZone/wsq_icon.png" width="18" height="21" /></span><span class="right"><a href="#">查看意见</a> | <a href="#">编辑</a> | <a href="#">删除</a></span></dd>
+                            <dd class="checked">返回修改</dd>
+                        </dl>
+                        <dl class="subject">
+                            <dt><a href="#" target="_blank" title=""><img src="../../imagesTemp/editorZone/ez-Temp2.jpg" width="272" height="198" /></a></dt>
+                            <dd><a class="caption" href="#" target="_blank" title="">拒绝的智慧</a></dd>
+                            <dd class="readers c1"><span class="right"><a href="#">查看已参赛</a> | <a href="#">预览</a> | <a href="#">下架</a></span></dd>
+                            <dd class="checked">已审核</dd>
+                        </dl>
+                        <dl class="subject">
+                            <dt><a href="#" target="_blank" title=""><img src="../../imagesTemp/editorZone/ez-Temp2.jpg" width="272" height="198" /></a></dt>
+                            <dd><a class="caption" href="#" target="_blank" title="">拒绝的智慧</a></dd>
+                            <dd class="readers c2"><span class="right"><a href="#">查看已参赛</a> | <a href="#">预览</a> | <a href="#">撤回</a></span></dd>
+                            <dd class="checked">待审核</dd>
+                        </dl>
+                        <dl class="subject">
+                            <dt><a href="#" target="_blank" title=""><img src="../../imagesTemp/editorZone/ez-Temp2.jpg" width="272" height="198" /></a></dt>
+                            <dd><a class="caption" href="#" target="_blank" title="">拒绝的智慧</a></dd>
+                            <dd class="readers c1"><span class="left ysq"><img src="../../images/editorZone/wsq_icon.png" width="18" height="21" /></span><span class="right"><a href="#">查看意见</a> | <a href="#">编辑</a> | <a href="#">删除</a></span></dd>
+                            <dd class="checked">返回修改</dd>
+                        </dl>
+                        <dl class="subject">
+                            <dt><a href="#" target="_blank" title=""><img src="../../imagesTemp/editorZone/ez-Temp2.jpg" width="272" height="198" /></a></dt>
+                            <dd><a class="caption" href="#" target="_blank" title="">拒绝的智慧</a></dd>
+                            <dd class="readers c1"><span class="right"><a href="#">查看已参赛</a> | <a href="#">预览</a> | <a href="#">下架</a></span></dd>
+                            <dd class="checked">已审核</dd>
+                        </dl>
+                        <dl class="subject">
+                            <dt><a href="#" target="_blank" title=""><img src="../../imagesTemp/editorZone/ez-Temp2.jpg" width="272" height="198" /></a></dt>
+                            <dd><a class="caption" href="#" target="_blank" title="">拒绝的智慧</a></dd>
+                            <dd class="readers c2"><span class="right"><a href="#">查看已参赛</a> | <a href="#">预览</a> | <a href="#">撤回</a></span></dd>
+                            <dd class="checked">待审核</dd>
+                        </dl>
+                    </div>
+                    <div class="page">
+                        <ul>
+                            <li><a href="#">&lt;</a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>...</li>
+                            <li><a href="#">170</a></li>
+                            <li><a href="#">&gt;</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="width1200pxAuto clearfix">
+                <div class="left footer-l"></div>
+                <div class="left footer-c">
+                    <p>服务热线：400-819-9993</p>
+                    <p class="consult">在线咨询：<a href="" target="_blank">http://help.cnki.net</a></p>
+                </div>
+                <div class="left footer-r">
+                    <p>数字出版：《中国学术期刊（光盘版）》电子杂志社有限公司</p>
+                    <p>京ICP证040431号 互联网出版许可证 新出网证(京)字008号</p>
+                </div>
+            </div>
+            <p class="copyright">在线发行：同方知网（北京）技术有限公司&nbsp;&nbsp;&nbsp;&nbsp;北京市公安局海淀分局&nbsp;备案号11010802020460</p>
+        </div>
+        <!--鼠标移动到每个文集上的效果-->
+        <script>
+        $(".myFrame .picShow .subject").hover(function(){$(this).addClass("subjectHover")},function(){$(this).removeClass("subjectHover")});
+        </script>
+        <script>
+        /**左右高度自适应*/
+        setHeight(); 
+        function setHeight()
+        {
+            var ecSideMenu=$(".ecSideMenu");
+            var myFrame=$(".myFrame");
+            var maxV=Math.max(ecSideMenu.height(),myFrame.height())+60;
+                 myFrame.height(maxV);  
+        }
+        </script>
+    </body>
+</html>

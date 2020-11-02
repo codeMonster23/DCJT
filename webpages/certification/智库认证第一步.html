@@ -1,0 +1,387 @@
+﻿<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>主讲认证第一步</title>
+        <link rel="stylesheet" href="../../css/public/public.css">
+        <link rel="stylesheet" href="../../css/public/header-and-footer.css">
+        <link rel="stylesheet" href="../../css/certification/certification1.css">
+        <link rel="stylesheet" href="../../css/certification/uploadify.css">
+        <script src="../../js/public/jquery-1.8.2.min.js"></script>
+    </head>
+    <body bgcolor="#F1EBDF">
+        <div class="header">
+            <div class="width1200pxAuto clearfix">
+                <div class="left clearfix">
+                    <div class="left logo"><a href=""><img src="../../images/platform/logo.png" height="44" width="176" alt=""></a></div>
+                    <div class="left nav">
+                        <ul>
+                            <li class="active"><a href="" class="nav-item" target="_blank" >首页</a></li>
+                            <li><a href="" class="nav-item" target="_blank">讲座</a></li>
+                            <li><a href="" class="nav-item" target="_blank">栏目</a></li>
+                            <li><a href="" class="nav-item" target="_blank">主讲</a></li>
+                            <li class="category dropdown">
+                                <a href="javascript:;" class="nav-item dropdown-toggle"><span>分类</span><i>▼</i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="">生活休闲</a></li>
+                                    <li><a href="">教育教学</a></li>
+                                    <li><a href="">生活休闲</a></li>
+                                    <li><a href="">生活休闲</a></li>
+                                    <li><a href="">生活休闲</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right clearfix">
+                    <div class="left search positionR clearfix">
+                        <div class="left input-group clearfix">
+                            <div class="left dropdown">
+                                <a href="javascript:;" class="dropdown-toggle"><span>讲座</span> <i>▼</i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="javascript:;">讲座</a></li>
+                                    <li><a href="javascript:;">栏目</a></li>
+                                    <li><a href="javascript:;">主讲</a></li>
+                                </ul>
+                            </div>
+                            <input type="text" value="艺术人生">
+                        </div>  
+                        <button class="left searchbtn"></button>
+                    </div>
+                    <div class="left loginWrap">
+                        <div class="user dropdown">
+                            <p class="dropdown-toggle clearfix"><span class="user-avatar positionR"><img src="../../images/platform/user-avatar.png" height="30" width="30" alt=""><i>12</i></span><span class="username">这个是我...</span></p>
+                            <ul class="dropdown-menu">
+                                <li><a href="">编创空间</a></li>
+                                <li class="personalCenter"><a href="">个人中心</a></li>
+                                <li class="homepage"><a href="">我的主页</a></li>
+                                <li class="msg"><a href="">我的消息<i></i></a></li>
+                                <li class="quit"><a href="">退出登陆</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="" class="left rightbtn bgColorOrange">发布讲座</a>
+                </div> 
+            </div>
+        </div>
+        <div class="certifiBanner"></div>
+        <div class="stepWrap1 width1190pxAuto">
+            <div class="step1"></div>
+            <div class="cont clearfix">
+                <div id="focus" class="left form">
+                    <div class="vocation txt_wrap">
+                        <label>所属行业：</label>
+                        <div class="select">请选择所属行业</div>
+                        <div class="change">重新择所属行业</div>
+                    </div>
+                    <div class="pop_list">
+                        <h2>请选择所属行业：</h2>
+                        <ul>
+                            <li>教育培训</li>
+                            <li class="active">教育教学</li>
+                            <li>经济金融</li>
+                            <li>企业管理</li>
+                            <li>市场营销</li>
+                            <li>IT/互联网</li>
+                            <li>出版/传媒</li>
+                            <li>通信/电子</li>
+                            <li>文学</li>
+                            <li>艺术</li>
+                            <li>党政军事</li>
+                            <li>法律法规</li>
+                            <li>医药卫生</li>
+                            <li>农林牧渔</li>
+                            <li>建筑房产</li>
+                            <li>环境安全</li>
+                            <li>水利/电力</li>
+                            <li>能源化工</li>
+                            <li>冶金矿业</li>
+                            <li>机电仪表</li>
+                            <li>航空航天</li>
+                            <li>汽车船舶</li>
+                            <li>交通/物流</li>
+                            <li>商贸/服务业</li>
+                        </ul>
+                        <div style="padding-left:20px;">
+                            <div class="add"><input class="left"  maxlength="8" type="text" onblur="if(this.value == '') {this.value='其他行业请在这里填写'}" onfocus="if(this.value == '其他行业请在这里填写') {this.value=''}" value="其他行业请在这里填写"><a class="left addition" href="#"></a></div>
+                        </div>
+                        <div class="list-btn">
+                            <a class="left sure" href="#">确认</a>
+                            <a class="left cancel" href="#">取消</a>
+                        </div>
+                    </div>
+                    <script>
+                        (function(){
+                            $(".vocation .select").click(function(){
+                                $(".mask, .pop_list").show()
+                                
+                                })
+                                $(".vocation .change").click(function(){
+                                $(".mask, .pop_list").show()
+                                
+                                })
+                            $(".add .addition").click(function(){
+                                var Val=$("input").val()
+                                if(Val!=""&&Val!="其他行业请在这里填写"){
+                                $(".pop_list ul").children("li").removeClass("active")
+                                $(".pop_list ul").append("<li class='active'>"+Val+"</li>")}
+                            })
+                            $(".pop_list ul li").live("click",function(){
+                                $(this).addClass("active").siblings("li").removeClass("active")})
+                            $(".list-btn .sure").click(
+                                function(){
+                                    var Html=$(".pop_list ul .active").html()
+                                    $(".vocation .select").addClass("selected").html(Html)
+                                    $(".pop_list, .mask").hide()
+                                    $(".vocation .change").show()
+                                    })
+                            $(".list-btn .cancel").click(
+                                function(){
+                                    $(".pop_list, .mask").hide()
+                                })
+                        })()
+                    </script>
+                    
+                    <div class="name txt_wrap">
+                        <label>真实姓名：</label>
+                        <div class="info">
+                            <span class="hint">请填写您的真实姓名</span>
+                            <input class="input_txt" type="text"  value="" >
+                        </div>
+                    </div>
+                    <div class="work txt_wrap">
+                        <label>工作单位：</label>
+                        <div class="info error">
+                            <span class="hint">如：北京XX技术股份有限公司</span>
+                            <input class="input_txt" type="text"  value="">
+                            <div class="tip">验证码不正确，请输入正确的验证码。</div>
+                        </div>
+                    </div>
+                    <div class="job short txt_wrap">
+                        <label>职务：</label>
+                        <div class="info">
+                            <span class="hint">如：高中英语特级教师、高级产品经理、一级工程师</span>
+                            <input class="input_txt" type="text"  value="">
+                        </div>
+                    </div>
+                    <div class="degree short txt_wrap">
+                        <label class="spec">学历：</label>
+                        <div class="info">
+                            <span class="hint">如：高中、专科、本科、硕士、博士</span>
+                            <input class="input_txt" type="text"  value="">
+                        </div>
+                    </div>
+                    <div class="skill txt_wrap">
+                        <label>擅长领域：</label>
+                        <div class="info">
+                            <span class="hint">如：高中英语教学、心血管疾病治疗</span>
+                            <input class="input_txt" type="text"  value="">
+                        </div>
+                    </div>
+                    <div class="intro txt_wrap">
+                        <label>个人简介：</label>
+                        <div class="info">
+                            <textarea class="area">如：高中语文特级教师，曾获得省级语文多项奖项，擅长高考语文。</textarea>
+                        </div>
+                    </div>
+                    <div class="photo photo2 txt_wrap">
+                        <label class="spec">相关证书：</label>
+                        <div class="pic pic2">
+                            <div  class="uploadify" id="file_upload" ><div class="uploadify-button " id="file_upload-button"><span class="uploadify-button-text">选择您要上传的图片</span></div></div>
+                            <!-- <span class="uploading">正在上传...</span> -->
+                          <!--   <span class="upload">上传成功<a href="#" style="color:#0385DB; padding-left:6px;">预览大图</a></span> -->
+                            <div class="img">
+                                <img class="certificate" src="../../images/certification/certificate.jpg" width="226" height="147">
+                            </div>
+                        </div>
+                        <div class="require">
+                            <p>1、可上传获奖证书、荣誉证书、资格证书等可证明您身份的照片。</p>
+                            <p>2、上传文件要求不得涂改，为彩色原件的清晰扫描件或者数码照片；</p>
+                            <p>3、照片格式支持JPG、JPEG、GIF、PNG文件，大小不超过2M</p>
+                        </div>
+                    </div>
+                    <div class="mobile txt_wrap">
+                        <label>联系手机：</label>
+                        <div class="info">
+                            <span class="hint">请填写11位手机号码</span>
+                            <input class="input_txt" type="text"  value="">
+                        </div>
+                    </div>
+                    <div class="message txt_wrap">
+                        <label>短信验证码：</label>
+                        <div class="info">
+                            <span class="hint">请输入4位短信验证码</span>
+                            <input class="input_txt" type="text"  value="">
+                            <div class="tip">如果收不到验证码，请与我们联系，进行人工认证（QQ：851061860：电话：010-62790307）</div>
+                        </div>
+                        <div class="dxyzm left">获取短信验证码</div>
+                    </div>
+                    
+                    <div class="qq txt_wrap">
+                        <label class="spec">QQ：</label>
+                        <div class="info">
+                            <span class="hint">请填写您的联系QQ</span>
+                            <input class="input_txt" type="text"  value="">
+                        </div>
+                    </div>
+                    <div class="mail txt_wrap">
+                        <label class="spec">电子邮箱：</label>
+                        <div class="info">
+                            <span class="hint">建议您填写您注册时使用的邮箱</span>
+                            <input class="input_txt" type="text"  value="">
+                        </div>
+                    </div>
+                    <div class="rule">
+                        <div class="textarea">
+                             <pre><strong>CNKI大成讲坛主讲实名认证协议</strong>
+感谢您使用CNKI大成讲坛平台。
+本协议就您接受《中国学术期刊（光盘版）》电子杂志社有限公司（以下简称CNKI）委托成为;CNKI大成讲坛的认证主讲，通过CNKI大成讲坛进行讲座的发布及相关服务所订立的有效合约，勾选我已阅读并接受以上协议或以任何方式参与讲座发布均视为同意且遵守本协议。本协议具有合同效力。
+
+一、总则
+1、本协议内容包括协议正文及所有CNKI大成讲坛已经发布的或将来可能发布的各类规则及经双方协商同意的补充协议。所有规则为本协议不可分割的组成部分，与协议正文具有同等法律效力。
+2、CNKI与您承诺接受并遵守本协议的约定。CNKI有权根据中华人民共和国有关法律、法规的调整、网络技术的发展以及公司经营策略的变化等情况对协议内容进行修改，修订后的协议将公布于CNKI大成讲坛网站，您继续使用CNKI大成讲坛，则视为对修订后的协议不持任何异议并同意遵守。
+
+二、相关概念
+1、CNKI大成讲坛：是中国知网旗下的内容发布、创作、展示与交易平台。是以知识应用为目的，为用户解决问题提供具体思路、方向和方法，辅助用户知识决策的知识服务平台。网址为：http://jiangtan.cnki.net 。
+2、用户：是指在CNKI大成讲坛平台浏览、搜索、阅读、下载各类知识资源的互联网用户和移动互联网用户。
+3、主讲：是指具有相关领域的专业经验，并通过CNKI大成讲坛平台的实名认证，接受CNKI大成讲坛授权委托，进行讲座发布的各领域专业人士。
+4、讲座发布：是指主讲按照CNKI大成讲坛要求，利用《中国知识资源总库》的各类资源和个人的知识与经验，发布的各种主题的讲座。5、主讲认证：是指登录CNKI大成讲坛平台，按要求填写相关信息并提供相关资质材料，申请并激活CNKI大成讲坛主讲账户、开通主讲权限的过程。
+
+三、您的权利与义务
+1、您享有在CNKI大成讲坛平台，使用讲坛创作系统进行讲座发布的权利。
+2、您享有CNKI大成讲坛为您开展工作提供的各项便利条件和相关服务。
+3、您需保证您所发布的内容符合中国法律、法规及国家政策的规定，不含任何违法、违规内容。
+4、您需要按照CNKI大成讲坛规定的质量及数量标准完成相关工作，若您能未达到有关要求，CNKI大成讲坛有权随时终止本委托，并取消您的认证主讲权益。
+5、您有义务保护CNKI大成讲坛平台提供的各项服务，严禁以任何形式擅自转让或授权他人使用自己的服务账户，一经发现，CNKI大成讲坛平台有权立即封禁该服务账户，并有权终止向您提供本协议约定的服务而无须承担违约责任。
+
+四、CNKI的权利与义务
+1、CNKI有权对您发布的讲座进行审核、修改和管理，对不符合《CNKI大成讲坛》平台编辑管理要求、国家相关法律法规要求的作品，CNKI大成讲坛有权进行处理（包括但不限于删除）或终止委托协议。
+2、CNKI负责对主讲发布及相关服务提供相关的技术支持与维护服务，保障您利用CNKI大成讲坛的讲坛创作系统快速、高效地开展创作和发布工作。
+
+五、知识产权
+1、CNKI拥有发布的讲座全部著作权，未经《中国学术期刊（光盘版）》电子杂志社有限公司书面允许，您不得将发布的讲座以任何形式转授第三方使用。
+2、CNKI拥有CNKI大成讲坛平台及其所有组成元素，包括但不限于所有内容、数据、技术、软件、代码、用户界面以及与其相关衍生作品的全部知识产权。
+
+六、免责声明
+1、CNKI大成讲坛平台将在现有技术的基础上尽最大努力提供相应的安全措施以保障服务安全和正常运行。但CNKI大成讲坛平台明确声明对服务不作任何明示或暗示的保证，包括但不限于对服务的安全性、可靠性、持续性、准确性、适用于某一特定用途等。
+2、CNKI大成讲坛有权在提前通知或不通知的情况下随时修改、限制、暂停或终止全部或部分CNKI大成讲坛平台服务，对于此等修改、限制、暂停或终止行为，CNKI大成讲坛对您或第三方不负任何责任。
+
+七、违约责任
+1、除本协议另有约定外，任何一方直接或间接违反本协议的任何条款或不承担或不及时、充分地承担本协议规定其应承担的义务，即构成违约行为，应各自承担相应的责任。
+2、除本协议另有约定外，违约方因其违约行为而应赔偿的守约方的损失包括但不限于守约方因违约方的违约行为而遭致的直接的经济损失及任何可预期的间接损失及其他合理的费用，包括但不限于律师费用、诉讼及仲裁费用、财务费用及差旅费等。
+
+八、协议期限与终止
+1、本协议自您接受之日起生效，期限自协议生效之日起一年，有效期满，如双方无异议，该协议自动续签一年，自动续签无次数限制。
+2、任何一方违反本协议制定的规则或协议中的任何承诺或保证，守约方均有权立即终止本协议。
+
+九、争议解决
+1、如双方就本协议内容或其执行发生任何争议，双方均应通过友好协商解决；协商不成，任何一方均可将争议提交《中国学术期刊（光盘版）》电子杂志社有限公司所在地人民法院裁决。
+2、如本协议任何条款由法院裁决为无效，不影响本协议其他条款的持续有效和执行。
+
+十、其他事项
+1、本协议未尽事宜，双方可协商签署补充协议说明。
+2、本协议最终解释权归《中国学术期刊（光盘版）》电子杂志社有限公司所有。
+
+</pre>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" checked id="check">&nbsp;<label for="check">我已阅读并接受以上协议</label>
+                    </div>
+                </div>
+                <div class="btn">
+                    <a  href="#">确认信息，提交认证</a>
+                </div>
+                <script type="text/javascript">
+                (function(){
+                $("#focus .input_txt").each(function(){
+                    $("#focus .input_txt").val("")
+                    var thisVal=$(this).val();
+                //判断文本框的值是否为空，有值的情况就隐藏提示语，没有值就显示
+                if(thisVal!=""){
+                $(this).siblings(".hint").hide();
+                }else{
+                $(this).siblings(".hint").show();
+                }
+                //聚焦型输入框验证
+                    $("#focus .info").click(function(){
+                        $(this).children("input").focus()})
+                    $(this).focus(function(){
+                $(this).siblings(".hint").hide();
+                    $(this).parent(".info").addClass("focus")
+                }).blur(function(){
+                var val=$(this).val();
+                if(val!=""){
+                $(this).siblings(".hint").hide();
+                }else{
+                $(this).siblings(".hint").show();
+                }
+                        $(this).parent(".info").removeClass("focus")
+                });
+                    })
+                    })()
+                </script>
+                <script>
+                $(function(){
+                    $(".info .area").val('如：高中语文特级教师，曾获得省级语文多项奖项，擅长高考语文。').css({"color":"#A9A9A9"})
+                    $(".info .area").focus(function(){
+                        $(this).val('');
+                        $(this).css({"color":"#575757"})
+                        $(this).parent(".info").addClass("focus")
+                    })
+                    $(".info .area").blur(function(){
+                        if($(this).val()==''){
+                            $(this).val('如：高中语文特级教师，曾获得省级语文多项奖项，擅长高考语文。');
+                            $(this).css({"color":"#A9A9A9"})
+                        }
+                        $(this).parent(".info").removeClass("focus")
+                    });
+                })
+                </script>
+            </div>
+            <div class="left rightsidebar">
+                <div class="aptitude">
+                    <div class="child2">
+                        <h2>申请资质要求</h2>
+                        <p class="p1">为了保证编创作品的高质量、高水准，科学、系统、高效地服务人们的工作、学习和生活，大成讲坛编委会制定了大成讲坛认证资质要求，满足下列条件之一即可向大成讲坛编委会提交认证申请。</p>
+                        <p class="p2">在各行各业具有一定影响力的专家、学者；</p>
+                        <p class="p2">在大、中、小学、幼儿园，以及培训机构工作的教职人员；</p>
+                        <p class="p2">有国家、行业、机构认可的从业资质证明（如资格证书、工作证明、职称证明、学历证明）者；</p>
+                        <p class="p2">有自己主编、编著、发行的图书/音像作品者；</p>
+                        <p class="p2">在期刊、报纸、会议等正规出版载体上发表过作品者；</p>
+                        <p class="p2">微信、微博、博客等平台的优秀自媒体人；</p>
+                        <p class="p2">在国家、省市或大型机构主办的正规比赛、评比中获奖（胜）者；</p>
+                        <p class="p2">具有一定专长、能力和水平的各行各业人员。</p>
+                    </div>
+                </div>
+                <div class="contact">
+                    <p class="bt">认证咨询</p>
+                    <p class="xm">教育教学、医药卫生</p>
+                    <p class="num">韩京锎：010-62790307；QQ：851061860</p>
+                    <p class="xm">人文社科、文学艺术</p>
+                    <p class="num">李骏：010-62790307；QQ：1067218187</p>
+                    <p class="xm">工程科技</p>
+                    <p class="num">刘岩：010-62969002-8374；QQ：2094918900</p>
+                    <p class="xm">农业科技、军事政法、经济管理</p>
+                    <p class="num">乔玉伟：010-62788660；QQ：763336331</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="width1200pxAuto clearfix">
+            <div class="left footer-l"><img src="../../images/platform/footer-logo.png" width="222" height="74" alt=""></div>
+            <div class="left footer-c">
+                <p>服务热线：400-819-9993</p>
+                <p class="consult">在线咨询：<a href="" target="_blank">http://help.cnki.net</a></p>
+            </div>
+            <div class="left footer-r">
+                <p>数字出版：《中国学术期刊（光盘版）》电子杂志社有限公司</p>
+                <p>京ICP证040431号 互联网出版许可证 新出网证(京)字008号</p>
+            </div>
+        </div>
+        <p class="copyright">在线发行：同方知网（北京）技术有限公司&nbsp;&nbsp;&nbsp;&nbsp;北京市公安局海淀分局&nbsp;备案号11010802020460</p>
+    </div>
+    <div id="mask" class="mask"></div>
+</body>
+</html>

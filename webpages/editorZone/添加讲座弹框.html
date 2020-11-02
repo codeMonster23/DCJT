@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="../../css/public/public.css">
+        <link rel="stylesheet" href="../../css/public/header-and-footer.css">
+        <link rel="stylesheet" href="../../css/editorZone/e_creatZone.css">
+        <script type="text/javascript" src="../../js/public/jquery-1.8.2.min.js"></script>
+    </head>
+	<body>
+		<div class="mask" style="display: block"></div>
+		<div class="modal modalAddLecture">
+			<div class="modal-header">添加讲座<span class="close"></span></div>
+			<div class="modal-body content">
+                <table>
+                    <tr>
+                        <th><input type="checkbox" class="allSelect">全选</th>
+                        <th>讲座名称</th>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>对“世界气候”的研究第八章 东亚地区</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>对“世界气候”的研究第八章 东亚地区</td>
+                    </tr>
+                    <tr class="active">
+                        <td><input type="checkbox"></td>
+                        <td>对“世界气候”的研究第八章 东亚地区</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>对“世界气候”的研究第八章 东亚地区</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>对“世界气候”的研究第八章 东亚地区</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>对“世界气候”的研究第八章 东亚地区</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>对“世界气候”的研究第八章 东亚地区</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>对“世界气候”的研究第八章 东亚地区</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>对“世界气候”的研究第八章 东亚地区</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>对“世界气候”的研究第八章 东亚地区</td>
+                    </tr>
+                </table>
+			</div>
+			<div class="modal-footer">
+				<a href="javascript:void(0)" class="btn btn1">确定</a><a href="javascript:void(0)" class="btn">取消</a>
+			</div>
+		</div>
+        <script>
+            $('.modalAddLecture table tr').each(function () {
+                $(this).find('td:last').css({'text-align':'left','padding-left':'10px'});
+            })
+            $('.modalAddLecture table tr').hover(function () {
+                $(this).addClass('active').siblings().removeClass('active');
+                $('td').css('border-bottom-color','#e8e8ec');
+                $(this).find('td').css('border-bottom-color','#dd8c69');
+                $('.modalAddLecture table tr').each(function () {
+                    $(this).find('td:last').css('border-right-color','#e8e8ec');
+                })
+                $(this).find('td:last').css('border-right-color','#dd8c69');
+                $('.modalAddLecture table th').css('border-bottom-color','#eff0f6');
+                $(this).prev().find('td,th').css('border-bottom-color','#dd8c69');
+            })
+        </script>
+	</body>
+</html>

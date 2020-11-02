@@ -1,0 +1,242 @@
+
+/* 个人讲坛-首页 */
+.personalCenter .sidebar .module-hd{ padding: 0 15px 0 20px; border-bottom: 1px solid #efefef; background: #fff; color: #333; }
+.personalCenter .topbanner{ height: 198px; }
+.personalCenter .topbanner .info .btns a{ display: inline-block; width: 90px; height: 34px; line-height: 34px; margin-right: 10px; border-radius: 5px; background: #fd6801; text-align: center; font-size: 16px; font-family: "Microsoft Yahei"; color: #fff; }
+.personalCenter .topbanner .info .btns .btn2{ width: 140px; background: #f90; }
+.personalCenter .dynamic{ padding-top: 0; }
+.personalCenter .sidenav { margin-bottom: 15px; }
+.personalCenter .sidenav li { height: 60px; line-height: 60px; border-left: 4px solid #f7f7f7; border-bottom: 1px solid #efefef; background: #f7f7f7; overflow:hidden; }
+.personalCenter .sidenav li a{ display: block; height: 60px; padding-left:26px; font-size: 16px; color: #757575; }
+.personalCenter .sidenav li i{ display: inline-block; vertical-align: middle; width: 27px; height: 27px; margin-right: 16px; background: url(../../images/personalCenter/sprite.png) no-repeat; }
+.personalCenter .sidenav li.cur{ border-left-color:#fd6801; background-color: #fff; }
+.personalCenter .sidenav li.cur a{ font-weight: bold; color: #fd6801; }
+.personalCenter .sidenav .item2 i{ background-position: -27px 0; }
+.personalCenter .sidenav .item3 i{ background-position: -54px 0; }
+.personalCenter .sidenav .item4 i{ background-position: -81px 0; }
+.personalCenter .sidenav .item5 i{ background-position: -108px 0; }
+.personalCenter .sidenav .item6 i{ background-position: -135px 0; }
+.personalCenter .sidenav .item7 i{ background-position: -162px 0; }
+.personalCenter .sidenav .item8 i{ background-position: -189px 0; }
+.personalCenter .sidenav .item1.cur i{ background-position: 0 -27px; }
+.personalCenter .sidenav .item2.cur i{ background-position: -27px -27px; }
+.personalCenter .sidenav .item3.cur i{ background-position: -54px -27px; }
+.personalCenter .sidenav .item4.cur i{ background-position: -81px -27px; }
+.personalCenter .sidenav .item5.cur i{ background-position: -108px -27px; }
+.personalCenter .sidenav .item6.cur i{ background-position: -135px -27px; }
+.personalCenter .sidenav .item7.cur i{ background-position: -162px -27px; }
+.personalCenter .sidenav .item8.cur i{ background-position: -189px -27px; }
+/* 讲座 */
+.personalCenter .leftWrap .module-hd{ height: 56px; padding: 0; margin-bottom: 8px; }
+.personalCenter .module-hd .tabNav li{ position: relative; float: left; height: 40px; padding: 8px 0 6px; border-bottom: 2px solid #fff; }
+.personalCenter .module-hd .tabNav li a{ display: block; width: 148px; line-height: 40px; border-right: 1px solid #efeeee; font: 18px/40px "Microsoft Yahei"; text-align: center; color: #535353; }
+.personalCenter .module-hd .tabNav li.cur{ border-bottom-color: #f60; }
+.personalCenter .module-hd .tabNav li.cur a{ color: #f60; }
+.personalCenter .module-hd .tabNav li.cur i{ position: absolute; bottom: -6px; left: 50%; margin-left: -7px; width: 15px; height: 6px; background: url(../../images/personalCenter/pc-icon1.png) no-repeat; }
+.personalCenter .lecture-list .content{ padding: 24px 14px 18px; }
+.personalCenter .module-hd .btngroup{ margin: 12px 0; }
+.personalCenter .module-bd{ background: #fff; }
+.personalCenter .module-bd .ad{ padding-top: 15px; }
+.personalCenter .module-bd .ad img{ display: block; margin: 0 auto; }
+.personalCenter .lecture-list .content li { width: 258px; height: auto; margin: 0 15px 30px; }
+.personalCenter .lecture-list .content li:hover { box-shadow: 4px 4px 5px rgba(6,0,1,0.1); }
+.personalCenter .lecture-list .content .pic { height: 195px; }
+.personalCenter .lecture-list .intro { padding: 4px 8px 0 13px; border-left: 1px solid #efefef; border-right: 1px solid #efefef; }
+.personalCenter .lecture-list .title { margin-top: 0; }
+.personalCenter .lecture-list .info { height: 28px; line-height: 28px; padding: 0 8px 0 13px; border: 1px solid #efefef; border-top: none; }
+/* 关注、粉丝 */
+.personalCenter .fans .btngroup { margin-left: 20px; }
+.personalCenter .fans .group .dropdown{ width: 100px; height: 22px; line-height: 22px; margin-left: 6px; border: 1px solid #ccc; border-radius: 2px; background: #fff url(../../images/personalCenter/pc-icon2.png) 86px center no-repeat; color: #333; }
+.personalCenter .fans .group .dropdown p{ padding-left: 8px; cursor: pointer; }
+.personalCenter .fans .group .dropdown ul{ position: absolute; left: -1px; top: 22px; width: 100px; border: 1px solid #ccc; background: #fff; z-index: 10; display: none; }
+.personalCenter .fans .group .dropdown li{ padding-left: 8px; cursor: pointer; }
+.personalCenter .fans .newGroup input{ float: left; width: 122px; height: 22px; line-height: 22px; padding: 0 5px; margin-top: 17px; margin-left: 10px; border: 1px solid #ccc; }
+.personalCenter .fans .newGroup button{ float: left; width: 36px; height: 24px; line-height: 24px; margin-top: 17px; margin-left: 5px; background: url(../../images/personalCenter/pc-icon16.jpg) no-repeat; }
+.personalCenter .fans .action{margin-right: 5px;}
+.personalCenter .fans .action span{ display: inline-block; width: 26px; height: 26px; margin: 15px 18px 0 0; background: url(../../images/personalCenter/pc-icon18.png) center no-repeat; cursor: pointer; }
+.personalCenter .fans .action span:hover{ background-image: url(../../images/personalCenter/pc-icon18-a.png); }
+.personalCenter .fans .action span.delete{ background-image: url(../../images/personalCenter/pc-icon19.png); }
+.personalCenter .fans .action span.delete:hover{ background-image: url(../../images/personalCenter/pc-icon19-a.png); }
+.modal1{ position: absolute; top: 400px; left: 50%; margin-left: -223px; width: 444px; height: 261px; border: 1px solid #d8d8d8; border-radius: 5px; background: #fff; }
+.modal1 .modal-hd{ height: 52px; padding-left: 18px; border-top: 8px solid #fa7f40; border-bottom: 2px solid #f4f4f4; border-top-left-radius: 4px; border-top-right-radius: 4px; font: bold 16px/52px "微软雅黑"; color: #2e2e2e; }
+.modal1 .modal-hd .close{ position: absolute; top: 28px; right: 23px; width: 16px; height: 16px; background: url(../../images/personalCenter/pc-icon17.png) no-repeat; cursor: pointer; }
+.modal1 .modal-bd{ height: 145px; }
+.modal1 .modal-bd p{ height: 40px; padding-top: 40px; padding-left: 27px; font: 14px/38px "微软雅黑"; color: #898989; }
+.modal1 .modal-bd input{ width: 316px; height: 38px; padding: 0 4px; border: 1px solid #e9e9e9; }
+.modal1 .modal-ft{ height: 54px; background: #f2f2f5; }
+.modal1 .modal-ft button{ display: inline-block; width: 74px; height: 36px; margin: 8px 3px; border: 1px solid #e0e0e0; border-radius: 5px; background: #fff; font: 14px/36px "微软雅黑"; color: #757575; cursor: pointer; }
+.modal1 .modal-ft button.btn1{ background: #f60; color: #fff; box-shadow: 1px 2px 3px rgba(184,184,184,0.75); }
+/* 栏目 */
+.personalCenter .createColumn { padding: 0; font-size: 14px; color: #9b9b9b; }
+.personalCenter .column-list .btngroup{ padding-right: 10px; }
+.personalCenter .column-list .content li{height: 284px;}
+.personalCenter .column-list .content2 li{ height: auto; }
+.personalHomePage .column-list .content2 li:hover{ border-color: #f60; }
+.personalCenter .column-list .content2 .item{ padding-top: 0; height: 97px; }
+.personalCenter .column-list .content2  .item a{ display: block; float: none; border: 0; width: 330px;}
+.personalCenter .column-list .content2 .item .blank{ line-height: 97px; text-align: center; color: #b3b3b3; width: 330px; }
+.personalCenter .column-list .content2 .more{ position: absolute; left: 169px; width: 50px; padding-right: 15px; background: url(../../images/personalCenter/pc-icon2.png) right center no-repeat; color: #1c89dc; }
+/* 评论 */
+.personalCenter .myFrame{ background: none; }
+/* 消息 */
+.personalCenter .msgWrap,.personalCenter .orderWrap{ margin-bottom: 70px; }
+.personalCenter .msg .module-hd,.personalCenter .order .module-hd{ height: 60px; padding-left: 49px; margin-bottom: 0; border-bottom: 1px solid #e7e6eb; font: 18px/60px "Microsoft Yahei"; }
+.personalCenter .tabMsg{ width: 816px; margin: 25px auto 0; border: 1px solid #e6e6e6; }
+.personalCenter .tabMsg .tab-nav{ border-bottom: 1px solid #e6e6e6; background: #f8f8f8; }
+.personalCenter .tabMsg .tab-nav span{ float: left; width: 120px; height: 40px; border-right: 1px solid #e6e6e6; font: 16px/36px "Microsoft Yahei"; color: #535353; text-align: center; cursor: pointer; }
+.personalCenter .tabMsg .tab-nav span.cur{ position: relative; bottom: 0; height: 35px; border-top: 4px solid #f79327; border-bottom: 1px solid #fff; background: #fff; font-weight: bold; color: #fd6801; }
+.personalCenter .tabMsg .item{ padding-left: 19px; padding-bottom: 15px; border-bottom: 1px solid #f1f1f1; color: #333; }
+.personalCenter .tabMsg .item.last{ border: 0; }
+.personalCenter .tabMsg .item.active{ border-color: #e7e6eb; background: #f4f5f9; }
+.personalCenter .tabMsg .item.active button{ background: #fff; }
+.personalCenter .tabMsg .msg-hd,.personalCenter .tabMsg .msg-bd{ padding-left: 25px; padding-right: 21px; }
+.personalCenter .tabMsg .msg-hd{ padding-top: 16px; padding-bottom: 13px; background: url(../../images/personalCenter/pc-icon3.jpg) left center no-repeat; font-size: 14px; }
+.personalCenter .tabMsg .msg-hd h2{ font-size: 14px; }
+.personalCenter .tabMsg .msg-hd h2 img{ vertical-align: middle; margin-top: -9px; margin-left: 6px; }
+.personalCenter .tabMsg .msg-hd .time{ color: #929090; }
+.personalCenter .tabMsg .msg-bd p{ float: left; width: 630px; line-height: 22px; }
+.personalCenter .tabMsg .msg-bd p a{ margin-left: 10px; color: #2a6ffb; }
+.personalCenter .tabMsg .msg-bd button{ float: right; width: 53px; height: 21px; border: 1px solid #e3d3aa; background: #fdf6e4; color: #c7a755; }
+.personalCenter .tabMsg .item1 .msg-hd{ background-image: url(../../images/personalCenter/pc-icon4.jpg); }
+.personalCenter .tabMsg .item1 .msg-bd button{ border-color: #e6e5e5; background: #fbfbfb; color: #929090; }
+/* 订单 */
+.personalCenter .tabOrder{ width: 793px; margin: 0 auto; }
+.personalCenter .tabOrder .nav span{ float: left; width: 88px; height: 33px; margin-right: 8px; background: #f7f7f7; text-align: center; font: 16px/33px "Microsoft Yahei"; color: #535353; cursor: pointer; }
+.personalCenter .tabOrder .nav span.cur{ background: #f60; color: #fff; }
+.personalCenter .tabOrder .tab-header{ margin: 33px 0 9px; }
+.personalCenter .tabOrder .search{ width: 300px; height: 26px; margin-top: 4px; border: 1px solid #bfbfbf; }
+.personalCenter .tabOrder .search input{ padding-left: 8px; width: 265px; height: 26px; line-height: 26px; }
+.personalCenter .tabOrder .search .btn{ width: 27px; height: 26px; background: url(../../images/personalCenter/cm-icon1.gif) no-repeat center; }
+.personalCenter .tabOrder table{ border: 1px solid #e7e7eb; font-size: 14px; text-align: center; }
+.personalCenter .tabOrder table a{ display: block; padding: 3px 26px; line-height: 22px; font-size: 12px; color: #2971fa; text-align: left; }
+.personalCenter .tabOrder table th{ height: 42px; line-height: 42px; border-right: 1px solid #e7e7eb; border-bottom: 1px solid #e7e7eb; background: #f6f6f6; }
+.personalCenter .tabOrder table td{ border-right: 1px solid #e7e7eb; border-bottom: 1px solid #e7e7eb; }
+.personalCenter .tabOrder .viewRecord{ display: block; padding: 30px 0 10px; font-size: 14px; font-weight: bold; color: #2a6ffb; }
+/* 我的账户-基本资料 */
+.personalCenter .profile{ padding: 0; margin-bottom: 70px; background: none; }
+.personalCenter .profile .info { padding: 40px 55px 0; }
+.personalCenter .profile .info .saveOrEdit { line-height: 40px; height: 40px; overflow: hidden; }
+.personalCenter .profile .info .saveOrEdit span, .profile .info .saveOrEdit div, .profile .info .saveOrEdit a { float:left; }
+.personalCenter .profile .info .saveOrEdit span { font-size: 14px; font-weight: bold; color: #575757; font-family: "宋体"; }
+.personalCenter .profile .info .saveOrEdit span i{ font-size: 12px; font-weight: normal; color: #808080; }
+.personalCenter .profile .info .saveOrEdit div { width: 667px; border-top:1px solid #e6e6e6; margin-top: 18px; margin-left:9px; }
+.personalCenter .profile .info .saveOrEdit a { border-radius:10px; border:1px solid #e6e6e6; width:44px; height:21px; line-height: 21px; background: #f2f2f2; font-size:12px; color: #575757; text-align: center; margin-top: 8px; }
+.personalCenter .profile .info .item { height: 32px; padding-top: 9px; padding-bottom: 9px; font-size: 14px; color: #575757; }
+.personalCenter .profile .info .display { float:left; line-height:30px; word-break: break-all; word-wrap: break-word; }
+.personalCenter .profile .baseInfo .display { width: 457px; margin-left:20px; }
+.personalCenter .profile .info .tag{ height: auto; overflow: hidden; }
+.personalCenter .profile .info .itemArea { padding-top: 9px; padding-bottom: 9px; font-size:14px; color:#575757; overflow:hidden; }
+.personalCenter .profile .info label { color: #808080; text-align: right; width: 76px; line-height: 32px; }
+.personalCenter .profile .info .inputFrame { color: #575757; border:1px solid #e3e3e3; background-color: #FFF; height: 30px; line-height: 30px; }
+.personalCenter .profile .baseInfo label{ margin-right: 20px; }
+.personalCenter .profile .baseInfo .inputFrame{ width: 455px; }
+.personalCenter .profile .info .textfield { position: relative; float:left; width: 445px; height: 175px; line-height: 24px; padding: 5px; /* margin-left: 20px; */
+	border:1px solid #e3e3e3; color: #575757; }
+.personalCenter .profile .info  textarea{ width: 100%; height: 156px; overflow: hidden; }
+.personalCenter .profile .info .textfield i{ position: absolute; bottom: 0; right: 5px; }
+.personalCenter .profile .info .textfield.active{ border-color: #f90; }
+.personalCenter .profile .info .inputFrame input { width: 440px; padding-left: 5px; line-height: 30px; height: 30px; border:none; background-color:transparent; }
+.personalCenter .profile .info .inputFrame.active{ border-color: #f90; }
+.personalCenter .profile .info .errorMessage { margin-left:16px; border:1px solid #ffd9bb; background-color:#fff7f5; height:30px; background-image: url(../../images/editorZone/ez26.gif); background-repeat: no-repeat; background-position: 10px center; padding-left: 29px; _display:inline; line-height: 30px; color: #666; font-size: 12px; padding-right: 10px; }
+.personalCenter .profile .info label, .profile .info .inputFrame, .profile .info .errorMessage { float:left; }
+.personalCenter .profile .avatar{ position: absolute; top: 60px; right: 8px; width: 179px; height: 179px; }
+.personalCenter .profile .avatar .photo{ width: 153px; height: 153px; padding: 12px; border: 1px solid #e3e3e3; }
+.personalCenter .profile .avatar img{ border: 0; border-radius: 0; }
+.personalCenter .profile .avatar .tip{ line-height: 18px; padding: 6px 0 10px; font-size: 12px; color: #808080; }
+.personalCenter .profile .moreInfo { margin-top: 65px; }
+.personalCenter .profile .moreInfo .saveOrEdit div{ width: 439px; }
+.personalCenter .profile .moreInfo .display{ padding-left: 10px; }
+.personalCenter .profile .moreInfo .itemArea li{ padding-left: 20px; margin-bottom: 18px; background:  url(../../images/personalCenter/pc-icon5.png) left center no-repeat; }
+.personalCenter .profile .moreInfo .result .display{ margin-top: 8px; }
+.personalCenter .profile .moreInfo .result li{ position: relative; margin-bottom: 0; margin-left: 3px; padding-bottom: 15px; background: none; border-left: 1px solid #f90; }
+.personalCenter .profile .moreInfo .result li.last{ border-left-color: #fff; }
+.personalCenter .profile .moreInfo .result li i{ position: absolute; top: 0; left: -4px; width: 7px; height: 7px; background:  url(../../images/personalCenter/pc-icon5.png) no-repeat; }
+.personalCenter .profile .moreInfo .result li h4{ line-height: 1; margin-bottom: 10px; }
+.personalCenter .profile .moreInfo .video .edit-group{ width: 710px; padding-left: 10px; }
+.personalCenter .profile .moreInfo .video li{ position: relative; float: left; padding: 0; margin: 0 10px 30px; background: none; }
+.personalCenter .profile .moreInfo .video li img{ display: block; }
+.personalCenter .profile .moreInfo .video li p{ height: 32px; line-height: 32px; margin-top: 10px; font-weight: bold; font-family: "宋体"; }
+.personalCenter .profile .btnsWrap{ height: 107px; padding: 0 156px; border-top: 1px dashed #d2d2d2; background: #f4f5f9; }
+.personalCenter .profile .btnsWrap a{ width: 80px; height: 32px; margin-top: 39px; font: 18px/32px "微软雅黑"; text-align: center; }
+.personalCenter .profile .btnsWrap .a1{ border: 1px solid #f90; background: #ffe1c4; color: #f97540; }
+.personalCenter .profile .btnsWrap .a3{ width: 220px; height: 49px; line-height: 49px; border-radius: 4px; margin-top: 29px; background: #e40404; color: #fff; text-align: center; font-size: 24px; }
+.personalCenter .profile .btnsWrap .a3:hover{ background: #fb3939; color: #fff !important; }
+.personalCenter .tab-section { width:186px; font-family:微软雅黑; font-size:14px; }
+.personalCenter .avatar-box .tabNav{ padding: 0 3px; }
+.personalCenter .avatar-box .tabNav .nav-item { float: left; width: 84px; height: 26px; line-height: 26px; margin: 0 2px; border: 1px solid #f90; border-radius: 3px; background: url(../../images/personalCenter/btn-bg.jpg); color:#ea8c00; text-align: center; cursor: pointer; }
+.personalCenter .avatar-box .tabNav .nav-item.active { position: relative; background: #f90; color:#fff; }
+.personalCenter .avatar-box .tabNav .nav-item.active i { position: absolute; bottom:-10px; left:50%; margin-left: -5px; width: 0; height: 0; border-width: 5px; border-color:#f79327 transparent transparent transparent; border-style: solid dashed dashed dashed; overflow: hidden; }
+.personalCenter .avatar-box .tabContent { padding-top: 10px; }
+.personalCenter .avatar-box  .systemAvatar ul { width: 176px; height: 266px; padding: 7px 4px 0; border: 1px solid #e3e3e3; margin-bottom: 10px; overflow: hidden; }
+.personalCenter .avatar-box .systemAvatar li { float: left; width: 82px; height: 82px; margin: 0 3px 7px; }
+.personalCenter .avatar-box .systemAvatar li img { width: 82px; height: 82px; }
+.personalCenter .avatar-box .systemAvatar li a:hover { border-color: #ff9420; }
+.personalCenter .avatar-box .uploadAvatar{ width: 152px; height: 152px; padding: 16px; border: 1px solid #e3e3e3; }
+.personalCenter .avatar-box .uploadAvatar .image{ width: 152px; height: 152px; line-height: 152px; background: #f2f2f2; text-align: center; color: #808080; }
+.personalCenter .profile .inputFrame .keyword { float: left; position: relative; line-height: 26px; height: 26px; padding-left: 8px; padding-right: 15px; margin-left: 4px; margin-top: 2px; border-radius: 2px; background-color: #fff0e1; color: #222; }
+.personalCenter .profile .inputFrame .keyword .close{ height: 7px; width: 7px; background-image: url(../../images/personalCenter/pc-icon6.png); background-repeat: no-repeat; position: absolute; top: 10px; right: 4px; cursor: pointer; }
+.personalCenter .profile .moreInfo .edit-group{ float: left; width: 706px; margin-bottom: 20px; }
+.personalCenter .profile .moreInfo .edit-title{ width: 66px; height: 30px; line-height: 30px; padding-left: 30px; margin-left: 20px; border: 1px solid #fb9e79; border-radius: 4px; background: #fffeec url(../../images/personalCenter/pc-icon12.png) 10px center no-repeat; color: #f90; cursor: pointer; }
+.personalCenter .profile .moreInfo .input-group{ float: left; height: 32px; padding-left: 20px; margin-top: 17px; background: url(../../images/personalCenter/pc-icon5.png) 6px  center no-repeat; }
+.personalCenter .profile .moreInfo .inputFrame{ width: 606px; }
+.personalCenter .profile .moreInfo .inputFrame input{ width: 596px; }
+.personalCenter .profile .moreInfo .delete-icon{ float: left; width: 12px; height: 32px; margin-left: 10px; background: url(../../images/personalCenter/pc-icon11.png) center no-repeat; cursor: pointer; }
+.personalCenter .profile .moreInfo .video .edit-group p{ height: 30px; line-height: 30px; padding-left: 7px; border: 1px solid #e3e3e3; font-weight: normal; }
+.personalCenter .profile .moreInfo .video input{ width: 200px; height: 28px; line-height: 28px; }
+.personalCenter .profile .moreInfo .video .close{ position: absolute; right: 0; top: 0; width: 25px; height: 25px; background: #f5f5f7 url(../../images/personalCenter/pc-icon11.png) center no-repeat; cursor: pointer; }
+.personalCenter .profile .moreInfo .video li.add .frame{ width: 214px; height: 62px; padding-top: 100px; border: 1px dashed #fb9e79; background: #fffcf9 url(../../images/personalCenter/pc-icon13.png) center 36px no-repeat; text-align: center; color: #fd6801; font-size: 16px; cursor: pointer; }
+.personalCenter .profile .moreInfo .video li.add .frame:hover{ background-color: #fff8f1; }
+.personalCenter .profile .moreInfo .video li.add .frame span{ font-size: 12px; }
+.personalCenter .profile .moreInfo .calendar{ background: none; }
+.personalCenter .profile .moreInfo .calendar span{ float: left; height: 30px; line-height: 30px; }
+.personalCenter .profile .moreInfo .calendar .inputFrame{ width: 190px; }
+.personalCenter .profile .moreInfo .calendar .laydate-icon{ width: 160px; padding-left: 10px; background-position: 165px center; background-image: url(../../images/personalCenter/calendar.png); }
+/* 我的账户-修改密码 */
+.personalCenter .profile .changePwd { height: 806px; }
+.personalCenter .profile .changePwd .complete{ padding-top: 90px; margin-left: 93px; margin-bottom: 106px; }
+.personalCenter .profile .changePwd .tips{ padding-left: 25px; margin-bottom: 15px; background: url(../../images/personalCenter/pc-icon7.gif) no-repeat left center; font-size: 14px; color: #4A4A4A; }
+.personalCenter .profile .changePwd .tips span{ margin: 0 40px 0 8px; font-family: Arial; color: #f79327; }
+.personalCenter .profile .changePwd .tips a{ font-size: 12px; color: #1D69B5; }
+.personalCenter .profile .changePwd p{ padding-left: 25px; line-height: 20px; font-size:12px; color: #b2b2b2; }
+.personalCenter .profile .changePwd .inputFrame{ width: 300px; }
+.personalCenter .profile .changePwd .inputFrame.error{ border-color: #ef6123; }
+.personalCenter .profile .changePwd .inputFrame input{ width: 290px; font-size: 12px; }
+.personalCenter .profile .changePwd .item label{ width: 88px; padding-left: 5px; color: #575757; font-weight: bold; text-align: left; }
+.personalCenter .profile .changePwd button{ width: 138px; height: 38px; line-height: 38px; margin-left: 93px; margin-top: 30px; border-radius: 5px; background: #f90; text-align: center; font-size: 16px; color: #fff; }
+.personalCenter .profile .judge-r,.personalCenter .profile .judge-w{ float: left; width: 12px; height: 32px; margin: 0 12px 0 6px; background: url(../../images/personalCenter/pc-icon8.jpg) no-repeat center; }
+.personalCenter .profile .changePwd .judge-w{ background-image: url(../../images/personalCenter/pc-icon9.jpg); } 
+.personalCenter .profile .changePwd .error-tip{ position: relative; float: left; width: 224px; padding-left: 16px; height: 30px; line-height: 30px; border: 1px solid #f90; background: #fffbf3; color: #3c3c3c; font-size: 12px; } 
+.personalCenter .profile .changePwd .error-tip i{ position: absolute; left: -9px; top: 9px; width: 9px; height: 14px; background-image: url(../../images/personalCenter/pc-icon10.png); }
+/* 我的账户-手机绑定 */
+.personalCenter .mobile-box .step { padding:0 20px; }
+.personalCenter .mobile-box .step .info-top { padding-top:36px; padding-bottom:33px; border-bottom:1px dashed #D9D9D9; height:30px; line-height:30px; font-size:24px; color:#cecece; padding-left:46px; margin-left: 50px; background:url(../../images/personalCenter/ec-icon21-mobile.gif) no-repeat 14px 37px; font-family: "微软雅黑"; }
+.personalCenter .mobile-box .step .info-top a { font-size:14px; color:#EE8922; margin-left:15px; padding:5px 18px; background:#FDEDDB; border-radius:4px; position:relative; top:-2px; border:1px solid #F6922A; }
+.personalCenter .mobile-box .step .info-bottom { padding:12px 14px; margin-left: 50px; color:#808080; }
+.personalCenter .mobile-box .step .info-bottom h1 { font-size:16px; line-height:34px; }
+.personalCenter .mobile-box .step .info-bottom p { font-size:12px; line-height:24px; }
+.personalCenter .mobile-box .step .tel-wrap { padding:40px 0 40px 160px; }
+.personalCenter .mobile-box .step .tel-wrap .row { margin-bottom:18px; }
+.personalCenter .mobile-box .step .tel-wrap .row label { float:left; width:70px; height:34px; line-height:34px; text-align:right; color:#4A4A4A; margin-right:18px; font-size:14px; }
+.personalCenter .mobile-box .step .tel-wrap .row .input-box { float:left; position:relative; margin-right:7px; }
+.personalCenter .mobile-box .step .tel-wrap .row input { height:32px; line-height:32px; border:1px solid #DCDCDC; padding-left:10px; width:287px; font-size:14px; }
+.personalCenter .mobile-box .step .tel-wrap .row .focus { border-color:#FDAD5C; }
+.personalCenter .mobile-box .step .tel-wrap .row .yzm-box { float:left; width:121px; height:32px; line-height:32px; border:1px solid #DCDCDC; text-align: center; background:#F1F1F1; color:#B3B3B3; margin-right:7px; }
+.personalCenter .mobile-box .step .tel-wrap .row .click { border:1px solid #F6922A; background:#FDEDDB; color:#F6922A; cursor:pointer; }
+.personalCenter .mobile-box .step .tel-wrap .yzm input { width:157px; }
+.personalCenter .mobile-box .step .tel-wrap .input-box .judge { right:6px; top:8px; width:18px; height:18px; }
+.personalCenter .mobile-box .step .tel-wrap .input-box .w { background:url(../../images/personalCenter/pc-icon14.jpg) no-repeat; }
+.personalCenter .mobile-box .step .tel-wrap .input-box .r { background:url(../../images/personalCenter/pc-icon15.jpg) no-repeat; }
+.personalCenter .mobile-box .step .tel-wrap .row .error { height:34px; line-height:34px; color:#FDAD5C; font-size:12px; }
+.personalCenter .mobile-box .step .tel-wrap .row .error1{ width:192px; line-height:17px; }
+.personalCenter .mobile-box .step .tel-wrap .row .error1 a{ color:#0A83D8; text-decoration:underline; }
+.personalCenter .mobile-box .step .tel-wrap .tel-btn { width:240px; height:32px; padding-left:87px; }
+.personalCenter .mobile-box .step .tel-wrap .tel-btn a { width:112px; height:30px; line-height:30px; border-style:solid; border-width:1px; border-radius:3px; text-align:center; font-size:14px; }
+.personalCenter .mobile-box .step .tel-wrap .tel-btn .sure { float:left; background:#F6922A; border-color:#F6922A; color:#ffffff; }
+.personalCenter .mobile-box .step .tel-wrap .tel-btn .sure:hover { background:#EE8922; border-color:#EE8922; }
+.personalCenter .mobile-box .step .tel-wrap .tel-btn .cancel { float:right; background:#FCFCFC; border-color:#DADADA; color:#A5A5A5; }
+.personalCenter .mobile-box .step .tel-wrap .tel-btn .cancel:hover { background:#ffffff; }
+.personalCenter .mobile-box .step .complete { padding:50px 0 50px 170px; }
+.personalCenter .mobile-box .step .complete .tips { padding-left:25px; height:16px; line-height:16px; font-size:14px; color:#4A4A4A; margin-bottom:10px; background:url(../../images/personalCenter/pc-icon7.gif) no-repeat left center; }
+.personalCenter .mobile-box .step .complete .tips span { font-family:Arial; color:#f79327; margin-left:8px; margin-right:40px; }
+.personalCenter .mobile-box .step .complete .tips a { font-size:12px; color:#1D69B5; }
+.personalCenter .mobile-box .step .complete p { padding-left:25px; line-height:20px; color:#b2b2b2; font-size:12px; }

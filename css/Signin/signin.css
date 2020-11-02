@@ -1,0 +1,106 @@
+.signin{ background:url(../../images/Signin/signin_bg1.jpg) repeat-x; }
+.dl_top { width:888px; height:80px; margin:100px auto 10px; text-align:left; background:url(../../images/Signin/signin_logo.jpg) no-repeat; }
+.dl_main { width:888px; height:375px; margin:0px auto; background:#BCA67D; }
+.dl_main .dl_left { width:443px; height:375px; background:url(../../images/Signin/signin_pic.jpg) no-repeat; float:left; }
+.dl_main .dl_right { float:right; width:366px; height:375px; padding:0 23px 0 55px; text-align:left; background:#FFFFFF; }
+.dl_main .dl_right .word { width:357px; margin:15px 0 0; text-align:left; line-height:30px; font-size:16px; font-weight:bold; }
+.dl_main .dl_right .shuru { width:357px; margin:15px 0; }
+.dl_main .dl_right .shuru .name { width:305px; height:38px; line-height:38px; padding-left:30px; border:1px solid #ccc; background: #ffffff url(../../images/Signin/signin_biao01.jpg) no-repeat 5px 8px; font-size:14px; color:#000; }
+.dl_main .dl_right .shuru .goldenBorder { border:1px solid #FF6507; }
+.dl_main .dl_right .shuru .code { width:305px; height:38px; border:1px solid #ccc; background: #ffffff url(../../images/Signin/signin_biao02.jpg) no-repeat 5px 8px; font-size:14px; color:#000; line-height:38px; padding-left:30px; }
+
+.dl_main .dl_right .jzyhm { position:relative; color:#333; font-size:12px; height:30px; overflow:hidden; width:357px; }
+.dl_main .dl_right .jzyhm span { font-size:12px; color:#c00; font-weight:bold; }
+.dl_main .dl_right .jzyhm a { position:absolute; color:#333; right:20px; top:2px; display:block; }
+.dl_main .dl_right .btn_dl { width:335px; height:40px; }
+.dl_main .dl_right .hmyzh { margin:10px 0; font-size:12px; color:#333; height:26px; line-height:26px; }
+.dl_main .dl_right .hmyzh a { color:#0386d8; text-decoration:underline; }
+.dl_main .dl_right .text { color:#b0b0b0; width:335px; font-size:12px; padding-top:15px; border-top:1px dotted #c0c0c0; height:20px; }
+.dl_main .dl_right .link { width:359px; overflow:hidden; margin-top:8px; }
+
+.zc_top { width:878px; height:70px; margin:50px auto 0px; font-size:14px; text-align:right; padding-top:0px; padding-right:10px; }
+.zc_top .l_logo { float:left; width:297px; }
+.zc_top .l_logo a { display:block; height:40px; margin-top: 9px; background: url(../../images/Signin/signin-header.png) left bottom no-repeat; }
+.zc_top .r_link { float:right; margin-top:50px; }
+.zc_top a { color:#0386d8; }
+.zc_main { width:888px; height:475px; margin:0px auto; background:#C2AD84; }
+.zc_main .zc_left { width:609px; height:475px; background:#ffffff; float:left; padding:0 0px 0 0px; text-align:left; }
+.zc_main .zc_left .tit { font-size:16px; font-weight:bold; text-align:left; height:20px; line-height:20px; margin:15px; } 
+.zc_main .zc_left .tab { margin:0px 15px 20px; height:40px; line-height:40px; color:#b0b0b0; }
+.zc_main .zc_left .tab span { width:85px; font-size:14px; color:#555454; display:block; float:left; height:40px; line-height:40px; text-align:right; }
+.zc_main .zc_left .tab input { display:block; float:left; font-size:14px; line-height:40px; color:#999; margin-right:10px; }
+.zc_main .zc_left .tab .yhm { height:38px; border:1px solid #FF6507; width:285px; }
+.zc_main .zc_left .tab .mm { height:38px; border:1px solid #ccc; width:285px; }
+.zc_main .zc_left .tab .yzm { height:38px; border:1px solid #ccc; width:100px; }
+.zc_main .zc_left .tab img { border:1px solid #ccc; }
+.zc_main .zc_left .tab a { color:#0386d8; }
+.zc_main .zc_left .xieyi { margin:20px 0 10px 100px; }
+.zc_main .zc_left .xieyi a { color:#0386d8; }
+.zc_main .zc_left .ljzc { margin:10px 0 10px 100px; width:285px; height:40px; }
+.zc_main .zc_left .text { color:#b0b0b0; width:555px; font-size:12px; padding-top:15px; border-top:1px dotted #c0c0c0; height:20px; margin:20px 30px 0; }
+.zc_main .zc_left .link { width:359px; overflow:hidden; margin-top:8px; margin-left:30px; }
+
+.zc_main .zc_left .zccg { text-align:center; margin:50px auto 20px; height:28px; }
+.zc_main .zc_left .zccg .cg_biao { background: url(../../images/Signin/signin_biao.jpg) no-repeat; float:left; width:28px; height:28px; display:block; }
+.zc_main .zc_left .zccg .cg_tit { height:28px; line-height:28px; padding-left:10px; font-size:18px; float:left; display:block; }
+.zc_main .zc_left .zccg .cg_tit span { font-weight:bold; color:#ff9702; }
+.zc_main .zc_left .zccg { text-align:center; }
+.zc_main .zc_left .cg_line { width:587px; height:26px; background:url(../../images/Signin/signin_xz.jpg) no-repeat; margin:30px auto 0px; }
+.zc_wrap{ padding: 42px 0 50px; background: #ebebeb  url(../../images/edit/jz-post-bg2.png) center top no-repeat; }
+.zc_main1 { width:1198px; height:473px; /* 	margin:42px auto 50px; */
+	border: 1px solid #c9c8c8; background:#fff; }
+.zc_main1 .zc_left { float: none; width: 886px; padding:0; margin: 0 auto; background:#fff; text-align:left; }
+.zc_main1 .zc_left .tit { font-size:16px; font-weight:bold; text-align:left; height:20px; line-height:20px; margin:15px; } 
+.zc_main1 .zc_left .tab { margin:0px 15px 20px; height:40px; line-height:40px; color:#b0b0b0; }
+.zc_main .zc_left .tab span { width:85px; font-size:14px; color:#555454; display:block; float:left; height:40px; line-height:40px; text-align:right; }
+.zc_main1 .zc_left .tab input { display:block; float:left; font-size:14px; line-height:40px; color:#999; margin-right:10px; }
+.zc_main1 .zc_left .tab .yhm { height:38px; border:1px solid #c0981f; width:285px; }
+.zc_main1 .zc_left .tab .mm { height:38px; border:1px solid #ccc; width:285px; }
+.zc_main1 .zc_left .tab .yzm { height:38px; border:1px solid #ccc; width:100px; }
+.zc_main1 .zc_left .tab img { border:1px solid #ccc; }
+.zc_main1 .zc_left .tab a { color:#0386d8; }
+.zc_main1 .zc_left .xieyi { margin:20px 0 10px 100px; }
+.zc_main1 .zc_left .xieyi a { color:#0386d8; }
+.zc_main1 .zc_left .ljzc { margin:10px 0 10px 100px; width:285px; height:40px; }
+.zc_main1 .zc_left .text { color:#b0b0b0; width:555px; font-size:12px; padding-top:15px; border-top:1px dotted #c0c0c0; height:20px; margin:20px 30px 0; }
+.zc_main1 .zc_left .link { width:359px; overflow:hidden; margin-top:8px; margin-left:30px; }
+
+.zc_main1 .zc_left .zccg { margin-top: 0; height:auto; }
+.zc_main1 .zc_left .zccg .welcome{ margin: 35px 0 17px 76px; text-align: left; font-size: 20px; font-family: "Microsoft Yahei"; color: #575757; }
+.zc_main1 .zc_left .zccg .welcome span{ color: #f40; }
+.zc_main1 .zc_left .zccg .cg_biao { background: url(../../images/Signin/signin_biao.jpg) no-repeat; float:left; width:28px; height:28px; margin-left: 310px; display:block; }
+.zc_main1 .zc_left .zccg .cg_tit { height:28px; line-height:28px; padding-left:10px; font-size:26px; float:left; color: #575757; font-family: "Microsoft Yahei"; display:block; }
+.zc_main1 .zc_left .zccg .cg_tit span { font-weight:bold; color:#FF4400; }
+.zc_main1 .zc_left .return{ text-align:center; }
+.zc_main1 .zc_left .return a{ color:#50A5E0; }
+.zc_main1 .zc_left .cg_line { width:888px; height:26px; background:url(../../images/Signin/signinnew_xz.jpg) no-repeat; margin:15px auto 0px; }
+.zc_main1 .zc_left .cg_choose { margin:10px 0; overflow:hidden; }
+
+.zc_main1, .zc_main1 .zc_left{ overflow:hidden; height:auto; }
+.zc_main1 .zc_left .cg_choose .list{ padding:10px 0 10px 34px; background:#FAFAFA; overflow:hidden; zoom:1; }
+.zc_main1 .zc_left .cg_choose .bgGrey{ background:#FAFAFA; }
+.item{ float:left; width:120px; height:31px; line-height:31px; text-align:center; color:#393C41; background: url(../../images/Signin/signinnew_itembg1.png) no-repeat; margin-right:20px; cursor:pointer; }
+.itemhover{ background:url(../../images/Signin/signinnew_itembg2.png) no-repeat; color:#fff; }
+.itemclick{ background:url(../../images/Signin/signinnew_itembg2.png) no-repeat; color:#fff; }
+.zc_main1 .zc_left .linexq{ height:26px; background:url(../../images/Signin/signinnew_xqbq.jpg) no-repeat; }
+.zc_main1 .zc_left .custom{ padding:15px 0px 0px 34px; overflow:hidden; zoom:1; *padding-bottom:20px; }
+.zc_main1 .zc_left .custom .item{ margin-bottom:20px; }
+.zc_main1 .zc_left .add{ float:left; width:246px; height:30px; padding-top:1px; padding-left:14px; background:url(../../images/Signin/signinnew_add.gif) no-repeat; margin-bottom:20px; }
+.zc_main1 .zc_left .add input{ height:29px; line-height:30px; width:214px; border:none 0; }
+.zc_main1 .zc_left .add .btn{ height:31px; width:31px; }
+.zc_main1 .zc_left .line{ height:1px; background:url(../../images/Signin/signinnew_line.jpg) no-repeat; margin-bottom:19px; font-size:0; }
+.zc_main1 .zc_left .choose1{ padding-left:192px; height:36px; margin-bottom:13px; }
+.zc_main1 .zc_left .choose1 label{ height:36px; line-height:36px; color:#C0C0C0; font-weight:bold; font-size:14px; width:60px; margin-right:20px; }
+.zc_main1 .zc_left .choose1 a{ width:155px; height:36px; line-height: 36px; margin-right: 6px; background: #008aff; color: #fff; font-weight: bold; font-size: 14px; text-align: center; }
+.zc_main1 .zc_left .choose1 .zksy{ background:url(../../images/Signin/signinnew_zksy.gif) no-repeat; margin-right:30px; }
+.zc_main1 .zc_left .choose1 .czzx{ background:url(../../images/Signin/signinnew_czzx.gif) no-repeat; }
+.zc_main1 .zc_left .choose2{ padding-left:272px; height:36px; padding-bottom:20px; }
+.zc_main1 .zc_left .choose2 a{ width:155px; height:36px; }
+.zc_main1 .zc_left .choose2 .my{ background:url(../../images/Signin/signinnew_my.gif) no-repeat; margin-right:30px; }
+.zc_main1 .zc_left .choose2 .editor{ background:url(../../images/Signin/signinnew_editor.gif) no-repeat; }
+.zc_main1 .zc_left .hbds{ display:block; margin:20px auto; width:717px; height:79px; background:url(../../images/Signin/hbds.jpg) no-repeat; }
+.zc_main .zc_right { width:279px; height:475px; background:url(../../images/Signin/zc_pic1.jpg) no-repeat; float:right; }
+.dl_foot { margin:50px auto 0; width:660px; font-size:12px; line-height:28px; color:#4B3419; }
+.zc_wrap .protocal{ width: 1144px; border: 1px solid #c6c6c6; margin: 0 auto; background: #fff; }
+.zc_wrap .protocal img{ margin-bottom: 45px; }
+.zc_wrap .protocal .section{ line-height: 28px; padding: 0 78px; margin-bottom: 27px; font-size: 14px; }

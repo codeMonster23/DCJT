@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="../../css/public/public.css">
+        <link rel="stylesheet" href="../../css/public/header-and-footer.css">
+        <link rel="stylesheet" href="../../css/edit/edit.css">
+        <script src="../../js/public/jquery-1.8.2.min.js"></script>
+        <script src="../../js/public/super_slider.js"></script>
+		<script src="../../js/public/divSelect.js"></script>
+		<script src="../../js/public/jquery.promptToggle.js"></script>
+		<script src="../../js/platform/jquery-ui.min.js"></script>
+		<script src="../../js/platform/jquery.mousewheel.js"></script>
+    </head>
+    <body>
+
+    	<div class="header">
+    		<div class="width1200pxAuto clearfix">
+    			<div class="left clearfix">
+    				<div class="left logo"><a href=""><img src="../../images/platform/logo.png" height="44" width="176" alt=""></a></div>
+		    		<div class="left nav">
+		    			<ul>
+		    				<li class="active"><a href="" class="nav-item" target="_blank" >首页</a></li>
+		    				<li><a href="" class="nav-item" target="_blank">讲座</a></li>
+		    				<li><a href="" class="nav-item" target="_blank">栏目</a></li>
+		    				<li><a href="" class="nav-item" target="_blank">主讲</a></li>
+		    				<li class="category dropdown">
+	    						<a href="javascript:;" class="nav-item dropdown-toggle"><span>分类</span><i>▼</i></a>
+		    					<ul class="dropdown-menu">
+		    						<li><a href="">生活休闲</a></li>
+		    						<li><a href="">教育教学</a></li>
+		    						<li><a href="">生活休闲</a></li>
+		    						<li><a href="">生活休闲</a></li>
+		    						<li><a href="">生活休闲</a></li>
+		    					</ul>
+		    				</li>
+		    			</ul>
+		    		</div>
+    			</div>
+	    		<div class="right clearfix">
+	    			<div class="left search positionR clearfix">
+	    				<div class="left input-group clearfix">
+	    					<div class="left dropdown">
+	    						<a href="javascript:;" class="dropdown-toggle"><span>讲座</span> <i>▼</i></a>
+		    					<ul class="dropdown-menu">
+		    						<li><a href="javascript:;">讲座</a></li>
+		    						<li><a href="javascript:;">栏目</a></li>
+		    						<li><a href="javascript:;">主讲</a></li>
+		    					</ul>
+	    					</div>
+	    					<input type="text" value="艺术人生">
+	    				</div>	
+	    				<button class="left searchbtn"></button>
+	    			</div>
+	    			<div class="left loginWrap">
+	    				<div class="user dropdown">
+    						<p class="dropdown-toggle clearfix"><span class="user-avatar positionR"><img src="../../images/platform/user-avatar.png" height="30" width="30" alt=""><i>12</i></span><span class="username">这个是我...</span></p>
+	    					<ul class="dropdown-menu">
+	    						<li><a href="">编创空间</a></li>
+	    						<li class="personalCenter"><a href="">个人中心</a></li>
+	    						<li class="homepage"><a href="">我的主页</a></li>
+	    						<li class="msg"><a href="">我的消息<i></i></a></li>
+	    						<li class="quit"><a href="">退出登陆</a></li>
+	    					</ul>
+    					</div>
+	    			</div>
+					<a href="" class="left rightbtn bgColorOrange">发布讲座</a>
+	    		</div> 
+			</div>
+    	</div>
+    	<!--content-->
+		<div class="changeBg skin1">
+		    <div class="editWrap">
+		    	<div class="avatar"><a href="#"><img src="../../imagesTemp/edit/jt-bj-head.jpg" width="82" height="82" /></a></div>
+		    	<div class="mainArea">
+		        	<span class="triangle"></span>
+		        	<div class="editBox">
+		            	<div class="tools">
+		                	<div class="s1 left clearfix">
+		                    	<a href="javascript:void(0);" class="left cx"></a>
+		                        <a href="javascript:void(0);" class="left qxcx"></a>
+		                    </div>
+		                    <div class="s2 left clearfix">
+		                    	<div class="fontFamily select left">
+		                        	<p>微软雅黑</p>
+		                            <ul>
+		                            	<li>宋体</li>
+		                                <li>微软雅黑</li>
+		                                <li>隶书</li>
+		                                <li>黑体</li>
+		                                <li>幼圆</li>
+		                                <li>楷体</li>
+		                                <li>黑体</li>
+		                                <li>幼圆</li>
+		                                <li>楷体</li>
+		                                <li>黑体</li>
+		                                <li>幼圆</li>
+		                                <li>楷体</li>
+		                            </ul>
+		                        </div>
+		                        <div class="fontSize select left">
+		                        	<p>16px</p>
+		                            <ul>
+		                            	<li>12px</li>
+		                                <li>14px</li>
+		                                <li>16px</li>
+		                                <li>18px</li>
+		                                <li>20px</li>
+		                                <li>22px</li>
+		                                <li>24px</li>
+		                                <li>26px</li>
+		                                <li>28px</li>
+		                            </ul>
+		                        </div>
+		                        <a href="javascript:void(0);" class="left textSet bold"><img src="../../images/edit/toolsbar-icon4.png" width="11" height="17" /></a>
+		                        <a href="javascript:void(0);" class="left textSet italic"><img src="../../images/edit/toolsbar-icon5.png" width="11" height="17" /></a>
+		                        <a href="javascript:void(0);" class="left textSet underline"><img src="../../images/edit/toolsbar-icon6.png" width="12" height="17" /></a>
+		                        <a href="javascript:void(0);" class="left textSet color"><img src="../../images/edit/toolsbar-icon7.png" width="15" height="17" /></a>
+		                        <a href="javascript:void(0);" class="left textSet bgcolor"><img src="../../images/edit/toolsbar-icon8.png" width="19" height="17" /></a>
+		                    </div>
+		                    <div class="s3 left clearfix">
+		                    	 <a href="javascript:void(0);" class="left alignSet tleft"><img src="../../images/edit/toolsbar-icon9.png" width="14" height="17" /></a>
+		                         <a href="javascript:void(0);" class="left alignSet tcenter"><img src="../../images/edit/toolsbar-icon10.png" width="15" height="17"/></a>
+		                      <a href="javascript:void(0);" class="left alignSet tright"><img src="../../images/edit/toolsbar-icon11.png" width="14" height="17"/></a>
+		                         <!--    <a href="javascript:void(0);" class="left sjSet sj1"><img src="../../images/edit/toolsbar-icon12.png" width="15" height="17"/></a>-->
+		                          <a href="javascript:void(0);" class="left sjSet sj2"><img src="../../images/edit/toolsbar-icon13.png" width="15" height="17"/></a>
+		                          <div class="left lineHeight">
+		                          	<p><img src="../../images/edit/toolsbar-icon14.png" width="18" height="17" /></p>
+		                            <ul>
+		                            	<li class="select"><a href="javascript:void(0);">1</a></li>
+		                                <li><a href="javascript:void(0);">1.5</a></li>
+		                                <li><a href="javascript:void(0);">1.75</a></li>
+		                                <li><a href="javascript:void(0);">2</a></li>
+		                                <li><a href="javascript:void(0);">3</a></li>
+		                                <li><a href="javascript:void(0);">4</a></li>
+		                                <li><a href="javascript:void(0);">5</a></li>
+		                            </ul>
+		                          </div>
+		                    </div>
+	                      	<div class="s4 left clearfix">
+	                      	   <a href="javascript:void(0);" class="left media link"><img src="../../images/edit/toolsbar-icon15.png" width="15" height="17" /></a>
+	                           <a href="javascript:void(0);" class="left media pic"><img src="../../images/edit/toolsbar-icon16.png" width="15" height="17" /></a>
+	                            <a href="javascript:void(0);" class="left media voice"><img src="../../images/edit/toolsbar-icon17.png" width="15" height="17" /></a>
+	                            <a href="javascript:void(0);" class="left media video"><img src="../../images/edit/toolsbar-icon18.png" width="15" height="17" /></a>
+	                      	</div>
+		                    <a href="" class="left styleBtn">+样式</a>	
+		                <a href="javascript:void(0)" class="control"></a>
+		                </div>
+		                <div class="titInput"><input type="text" value="请输入本期讲坛的标题（必填）" class="colorBlur" autocomplete="off" /></div>
+		                <script>
+							 PromptToggle($(".editBox .titInput input"),"请输入本期讲坛的标题（必填）","colorBlur")
+		                </script>
+		                <hr  class="pagebreak" noshade="noshade" size="0" style="-webkit-user-select: none;" />
+		                <div class="insert">
+		                	<div class="popover">
+		                		<div class="hanlde">
+			                		<a href="javscript:;">复制</a>
+			                		<a href="javscript:;">剪切</a>
+			                		<a href="javscript:;">粘贴</a>|
+			                		<a href="javscript:;"> 左对齐</a>
+			                		<a href="javscript:;">居中</a>
+			                		<a href="javscript:;">右对齐</a>|
+			                		<a href="javscript:;">删除</a>
+			                		<a href="javscript:;">上移</a>
+			                		<a href="javscript:;">下移</a>|
+			                		<a href="javscript:;">后空行</a>
+			                		<a href="javscript:;">前空行</a>
+			                		<a href="javscript:;">清除样式</a>
+			                		</div>
+		                		<div class="zoomBox clearfix">
+		                			<span class="left title">缩放</span>
+		                			<div class="left clearfix">
+		                				<a href="javscript:;" class="left btn minusBtn"></a>
+										<div class="left zoomBar">
+											<span class="progress"></span>
+											<span class="slideBar">
+												<a href="" class="slideBtn"></a>
+											</span>
+										</div>
+		                				<a href="javscript:;" class="left btn plusBtn"></a>
+		                			</div>
+		                		</div>
+		                	</div>
+		                </div>
+		            </div>
+		            <div class="infoArea">
+		            	<div class="infoWrap">
+			            	<div class="info">
+			            		<div class="row category clearfix">
+			                    	<label class="left"><i>*</i>分类：</label>
+		                         	<div class="frame select left">
+		                         		<p>生活休闲</p>
+		                         		<ul>
+		                         			<li>生活休闲</li>
+		                         			<li>生活休闲</li>
+		                         			<li>生活休闲</li>
+		                         		</ul>
+			            			</div>
+			            			<div class="frame select left">
+		                         		<p>生活休闲</p>
+		                         		<ul>
+		                         			<li>生活休闲</li>
+		                         			<li>生活休闲</li>
+		                         			<li>生活休闲</li>
+		                         		</ul>
+			            			</div>
+			            			<div class="frame select mgr0 left">
+		                         		<p>生活休闲</p>
+		                         		<ul>
+		                         			<li>生活休闲</li>
+		                         			<li>生活休闲</li>
+		                         			<li>生活休闲</li>
+		                         		</ul>
+			            			</div>
+			            			<a class="addSelect" href="javascript:;">+</a>
+			                    </div>
+			                    <div class="row clearfix">
+			                    	<label class="left"><i>*</i>关键词：</label>
+		                         	<div class="frame left" id="parentFrame">
+			                			<input class="colorGrey" id="keyword" type="text" value="多个关键词请用空格隔开，数量不超过5个" autocomplete="off" />
+			            			</div>
+			                    </div>
+			                    <div class="row shortcut positionR clearfix">
+			                    	<label class="left"><i>*</i>简介：</label>
+		                         	<div class="frame editBox left">
+						            	<div class="tools">
+						                    <div class="s2 left clearfix">
+						                    	<div class="fontFamily select left">
+						                        	<p>微软雅黑</p>
+						                            <ul>
+						                            	<li>宋体</li>
+						                                <li>微软雅黑</li>
+						                                <li>隶书</li>
+						                                <li>黑体</li>
+						                                <li>幼圆</li>
+						                                <li>楷体</li>
+						                                <li>黑体</li>
+						                                <li>幼圆</li>
+						                                <li>楷体</li>
+						                                <li>黑体</li>
+						                                <li>幼圆</li>
+						                                <li>楷体</li>
+						                            </ul>
+						                        </div>
+						                        <div class="fontSize select left">
+						                        	<p>16px</p>
+						                            <ul>
+						                            	<li>12px</li>
+						                                <li>14px</li>
+						                                <li>16px</li>
+						                                <li>18px</li>
+						                                <li>20px</li>
+						                                <li>22px</li>
+						                                <li>24px</li>
+						                                <li>26px</li>
+						                                <li>28px</li>
+						                            </ul>
+						                        </div>
+						                        <a href="javascript:void(0);" class="left textSet bold"><img src="../../images/edit/toolsbar-icon4.png" width="11" height="17" /></a>
+						                        <a href="javascript:void(0);" class="left textSet italic"><img src="../../images/edit/toolsbar-icon5.png" width="11" height="17" /></a>
+						                        <a href="javascript:void(0);" class="left textSet underline"><img src="../../images/edit/toolsbar-icon6.png" width="12" height="17" /></a>
+						                        <a href="javascript:void(0);" class="left textSet color"><img src="../../images/edit/toolsbar-icon7.png" width="15" height="17" /></a>
+						                        <a href="javascript:void(0);" class="left textSet bgcolor"><img src="../../images/edit/toolsbar-icon8.png" width="19" height="17" /></a>
+						                    </div>
+						                    <div class="s3 left clearfix">
+						                    	 <a href="javascript:void(0);" class="left alignSet tleft"><img src="../../images/edit/toolsbar-icon9.png" width="14" height="17" /></a>
+						                         <a href="javascript:void(0);" class="left alignSet tcenter"><img src="../../images/edit/toolsbar-icon10.png" width="15" height="17"/></a>
+						                      <a href="javascript:void(0);" class="left alignSet tright"><img src="../../images/edit/toolsbar-icon11.png" width="14" height="17"/></a>
+						                         <!--    <a href="javascript:void(0);" class="left sjSet sj1"><img src="../../images/edit/toolsbar-icon12.png" width="15" height="17"/></a>-->
+						                          <a href="javascript:void(0);" class="left sjSet sj2"><img src="../../images/edit/toolsbar-icon13.png" width="15" height="17"/></a>
+						                          <div class="left lineHeight">
+						                          	<p><img src="../../images/edit/toolsbar-icon14.png" width="18" height="17" /></p>
+						                            <ul>
+						                            	<li class="select"><a href="javascript:void(0);">1</a></li>
+						                                <li><a href="javascript:void(0);">1.5</a></li>
+						                                <li><a href="javascript:void(0);">1.75</a></li>
+						                                <li><a href="javascript:void(0);">2</a></li>
+						                                <li><a href="javascript:void(0);">3</a></li>
+						                                <li><a href="javascript:void(0);">4</a></li>
+						                                <li><a href="javascript:void(0);">5</a></li>
+						                            </ul>
+						                          </div>
+						                    </div>
+					                      	<div class="s4 left clearfix">
+					                      	   <a href="javascript:void(0);" class="left media link"><img src="../../images/edit/toolsbar-icon15.png" width="15" height="17" /></a>
+					                           <a href="javascript:void(0);" class="left media pic"><img src="../../images/edit/toolsbar-icon16.png" width="15" height="17" /></a>
+					                            <a href="javascript:void(0);" class="left media voice"><img src="../../images/edit/toolsbar-icon17.png" width="15" height="17" /></a>
+					                            <a href="javascript:void(0);" class="left media video"><img src="../../images/edit/toolsbar-icon18.png" width="15" height="17" /></a>
+					                      	</div>
+						                </div>
+						                <textarea placeholder="针对发布的讲座简单介绍背景、目的、内容 、目录等信息"></textarea>
+			            			</div>
+			            			<p class="wordLimit">0/2000</p>
+			                    </div>
+			                    <div class="row cover clearfix">
+			                    	<label class="left"><i>*</i>封面：</label>
+									<dl class="left clearfix">
+										<dt class=" left"></dt>
+										<dd class="left">
+											<p>建议封面尺寸为<i>280px*210px</i></p>
+											<p>图片需小于2M，支持jpg、gif、png</p>
+											<p></p>
+											<div class="btngroup">
+												<button type="button">本地上传</button>
+												<button type="button">从素材库选择</button>
+											</div>
+										</dd>
+									</dl>
+			                    </div>
+			                    <div class="row price clearfix">
+			                    	<label class="left"><i>*</i>价格：</label>
+			                    	<input type="radio" class="left"  id="free" name="price"/>
+			                    	<label class="left label1" for="free">免费</label>
+			                    	<input type="radio" class="left"  id="pay" name="price"/>
+			                    	<label class="left label1" for="pay">付费</label>
+			                    	<div class="left inputWrap">
+			                    		<span class="left">￥</span><input type="text" class="left" />
+			                    	</div>
+			                    	
+			                    	<label class="left label2">元</label>
+			                    </div>
+			                    <div class="row price status clearfix">
+			                    	<label class="left"><i>*</i>状态：</label>
+			                    	<div class="left statusBox clearfix" style="width:auto;">
+				                    	<div class="left select">
+			                         		<p>机构内发布+公开发布</p>
+			                         		<ul>
+			                         			<li>仅在机构内发布</li>
+			                         			<li>机构内发布+公开发布</li>
+			                         		</ul>
+				            			</div>
+				            			<div class="left select select2">
+			                         		<p>发布到</p>
+			                         		<div class="menu">
+			                         			<ul>
+				                         			<li><input type="checkbox" disabled checked>公开发布</li>
+				                         			<li><input type="checkbox">李俊平名师工作室</li>
+				                         			<li><input type="checkbox">李俊平名师工作室</li>
+				                         			<li><input type="checkbox">李俊平名师工作室</li>
+				                         			<li><input type="checkbox">李俊平名师工作室</li>
+				                         			<li><input type="checkbox">李俊平</li>
+				                         		</ul>
+				                         		<div class="btnWrap">
+				                         			<a href="javascript:;">确定</a>
+				                         		</div>
+			                         		</div>
+				            			</div>
+				            			<p class="tip">公开发布的作品，可在平台上公开出版，被读者订阅、分享并获得收益！</p>
+			                    	</div>
+			                    	<!-- <input type="radio" class="left"  id="state1" name="state"/>
+			                    	<label class="left label1" for="state1">公开发布</label>
+			                    	<input type="radio" class="left"  id="state2" name="state"/>
+			                    	<label class="left label1" for="state2">仅在机构内发布</label> -->
+			                    </div>
+			                </div>
+		                </div>
+		                <div class="btnsWrap">
+			                <div class="btns">
+		                    	<a href="javascript:void(0)" class="a1 left">保　存</a>
+		                        <a href="javascript:void(0)" class="a2 left">预　览</a>
+		                        <a href="javascript:void(0)" class="a3 left">取消</a>
+		                        <a href="javascript:void(0)" class="a4 right">提交发布</a>
+		                    </div>
+	                    </div>
+		            </div>
+		            <div class="foldBtn"></div>
+		            <div class="styleTemplate">
+		            	<h1>样式模板</h1>
+		            	<div class="tabnav clearfix">
+		            		<a href="javascript:;" class="cur">分割</a>
+		            		<a href="javascript:;">形状</a>
+		            		<a href="javascript:;">图片</a>
+							<a href="javascript:;">标题</a>
+		            	</div>
+		            	<div class="colorbar">
+		            		<span class="c1 cur" data-color="c1"></span>
+		            		<span class="c2" data-color="c2"></span>
+		            		<span class="c3" data-color="c3"></span>
+		            		<span class="c4" data-color="c4"></span>
+		            		<span class="c5" data-color="c5"></span>
+		            		<span class="c6" data-color="c6"></span>
+		            		<span class="c7" data-color="c7"></span>
+		            		<span class="c8" data-color="c8"></span>
+		            		<span class="c9" data-color="c9"></span>
+		            		<span class="c10" data-color="c10"></span>
+		            		<span class="c11" data-color="c11"></span>
+		            	</div>
+		            	<div class="tabContent">
+		            		<ul class="first">
+		            			<li><div class="item"><img src="../../images/edit/template/c1/line-s01.png" alt=""></div></li>
+		            			<li><div class="item"><img src="../../images/edit/template/c1/line-s02.png" alt=""></div></li>
+		            			<li><div class="item"><img src="../../images/edit/template/c1/line-s03.png" alt=""></div></li>
+		            			<li><div class="item"><img src="../../images/edit/template/c1/line-s04.png" alt=""></div></li>
+		            			<li><div class="item"><img src="../../images/edit/template/c1/line-s05.png" alt=""></div></li>
+		            			<li><div class="item"><img src="../../images/edit/template/c1/line-s06.png" alt=""></div></li>
+		            			<li><div class="item"><img src="../../images/edit/template/c1/line-s07.png" alt=""></div></li>
+		            			<li><div class="item"><img src="../../images/edit/template/c1/line-s08.png" alt=""></div></li>
+		            			<li><div class="item"><img src="../../images/edit/template/c1/line-s09.png" alt=""></div></li>
+		            			<li><div class="item"><img src="../../images/edit/template/c1/line-s10.png" alt=""></div></li>
+								<li><div class="item"><img src="../../images/edit/template/c1/line-s11.png" alt=""></div></li>
+								<li><div class="item"><img src="../../images/edit/template/c1/line-s12.png" alt=""></div></li>
+								<li><div class="item"><img src="../../images/edit/template/c1/line-s13.png" alt=""></div></li>
+								<li><div class="item"><img src="../../images/edit/template/c1/line-s14.png" alt=""></div></li>
+		          				<li><div class="item"><img src="../../images/edit/template/c1/line-s15.png" alt=""></div></li>
+		          				<li><div class="item"><img src="../../images/edit/template/c1/line-s16.png" alt=""></div></li>
+		            		</ul>
+		            		<ul class="shape">
+		            			<li><div class="item"><img src="../../images/edit/template/c1/shape-01.png" alt=""></div></li>
+		            			<li><div class="item"><img src="../../images/edit/template/c1/shape-02.png" alt=""></div></li>
+		            			<li><div class="item"><img src="../../images/edit/template/c1/shape-03.png" alt=""></div></li>
+		            			<li><div class="item"><img src="../../images/edit/template/c1/shape-04.png" alt=""></div></li>
+		            			<li><div class="item"><img src="../../images/edit/template/c1/shape-05.png" alt=""></div></li>
+		            			<li><div class="item"><img src="../../images/edit/template/c1/shape-06.png" alt=""></div></li>
+		            			<li><div class="item"><img src="../../images/edit/template/c1/shape-07.png" alt=""></div></li>
+		            			<li><div class="item"><img src="../../images/edit/template/c1/shape-08.png" alt=""></div></li>
+		            			<li><div class="item"><img src="../../images/edit/template/c1/shape-09.png" alt=""></div></li>
+		            			<li><div class="item"><img src="../../images/edit/template/c1/shape-10.png" alt=""></div></li>
+								<li><div class="item"><img src="../../images/edit/template/c1/shape-11.png" alt=""></div></li>
+								<li><div class="item"><img src="../../images/edit/template/c1/shape-12.png" alt=""></div></li>
+								<li><div class="item"><img src="../../images/edit/template/c1/shape-13.png" alt=""></div></li>
+								<li><div class="item"><img src="../../images/edit/template/c1/shape-14.png" alt=""></div></li>
+								<li><div class="item"><img src="../../images/edit/template/c1/shape-15.png" alt=""></div></li>
+								<li><div class="item"><img src="../../images/edit/template/c1/shape-16.png" alt=""></div></li>
+								<li><div class="item"><img src="../../images/edit/template/c1/shape-17.png" alt=""></div></li>
+								<li><div class="item"><img src="../../images/edit/template/c1/shape-18.png" alt=""></div></li>
+
+		            		</ul>
+		            		<ul class="pic">
+		            			<li><div class="item"><img src="../../images/edit/template/pic/pic-s01.png" alt=""></div></li>
+		            			<li><div class="item"><img src="../../images/edit/template/pic/pic-s02.png" alt=""></div></li>
+		            			<li><div class="item"><img src="../../images/edit/template/pic/pic-s03.png" alt=""></div></li>
+		            			<li><div class="item"><img src="../../images/edit/template/pic/pic-s04.png" alt=""></div></li>
+		            			<li><div class="item"><img src="../../images/edit/template/pic/pic-s05.png" alt=""></div></li>
+		            			<li><div class="item"><img src="../../images/edit/template/pic/pic-s06.png" alt=""></div></li>
+		            			<li><div class="item"><img src="../../images/edit/template/pic/pic-s07.png" alt=""></div></li>
+		            			<li><div class="item"><img src="../../images/edit/template/pic/pic-s08.png" alt=""></div></li>
+		            			<li><div class="item"><img src="../../images/edit/template/pic/pic-s09.png" alt=""></div></li>
+		            			<li><div class="item"><img src="../../images/edit/template/pic/pic-s10.png" alt=""></div></li>
+		            			<li><div class="item"><img src="../../images/edit/template/pic/pic-s11.png" alt=""></div></li>
+		            			<li><div class="item"><img src="../../images/edit/template/pic/pic-s12.png" alt=""></div></li>
+		            			<li><div class="item"><img src="../../images/edit/template/pic/pic-s13.png" alt=""></div></li>
+		            		</ul>
+                            <ul class="titS" style="height: 980px;">
+                                <li data-titid="1">
+                                    <div class="tit1 clearfix"><span class="left span1">01</span><span class=" left span2">大智作</span></div></li>
+                                <li data-titid="2">
+                                    <div class="tit2 clearfix"><span class="left span1">01</span><span class=" left span2">大智作</span></div></li>
+                                <li data-titid="3">
+                                    <div class="tit3 clearfix"><span class="left span1">01</span><span class=" left span2">大智作</span></div></li>
+                                <li data-titid="4">
+                                    <div class="tit4 clearfix"><span class="left span1"></span><span class=" left span2">大智作</span></div></li>
+                                <li data-titid="5">
+                                    <div class="tit5 clearfix"><span class="left span1">01</span><span class=" left span2">大智作</span></div></li>
+                                <li data-titid="6">
+                                    <div class="tit6 clearfix"><span class="left span1"></span><span class=" left span2">01 大智作</span><span class="left span3"></span></div></li>
+                                <li data-titid="7">
+                                    <div class="tit7 clearfix"><span class="left span1">01</span><span class=" left span2">大智作</span></div></li>
+                                <li data-titid="8">
+                                    <div class="tit8 clearfix"><span class="left span1">01</span><span class=" left span2">大智作</span></div></li>
+                                <li data-titid="9">
+                                    <div class="tit9 clearfix"><span class="left span1"></span><span class=" left span2">01 大智作</span><span class="left span3"></span></div></li>
+                                <li data-titid="10">
+                                    <div class="tit10 clearfix"><span class="left span1"></span><span class="left span2">01 大智作</span><span class="left span3"></span></div></li>
+                                <li data-titid="11">
+                                    <div class="tit11 clearfix"><span class="left span1">01</span><span class="span2">大智作</span></div></li>
+                                <li data-titid="12">
+                                    <div class="tit12 clearfix"><span class="left span1"></span><span class="left span2">01 大智作</span><span class="left span3"></span></div></li>
+                            </ul>
+		            	</div>
+		            </div>
+		        </div>
+		    </div>
+		    <div class="skinWrap">
+		      <div class="topWrap">
+		    	<div class="top">
+		        	<div class="topL"></div>
+		            <div class="change"><p class="fold">选择模板</p></div>
+		            <div class="topR"></div>
+		        </div>
+		       </div>
+		       <div class="skin clearfix">
+		       		<div class="showArea clearfix">
+						<div class="box">
+						<span class="prev"></span>
+						<div>
+							<ul id="roll">
+								<li><img src="../../images/edit/jt-skin-pic01.jpg" width="218" height="99" /><a href="javascrpt:void(0)" class="cover"></a></li>
+								<li><img src="../../images/edit/jt-skin-pic02.jpg" width="218" height="99" /><a href="javascrpt:void(0)"></a></li>
+								<li><img src="../../images/edit/jt-skin-pic03.jpg" width="218" height="99" /><a href="javascrpt:void(0)" ></a></li>
+								<li><img src="../../images/edit/jt-skin-pic04.jpg" width="218" height="99" /><a href="javascrpt:void(0)" ></a></li>
+								<li><img src="../../images/edit/jt-skin-pic05.jpg" width="218" height="99" /><a href="javascrpt:void(0)" ></a></li>
+								<li><img src="../../images/edit/jt-skin-pic06.jpg" width="218" height="99" /><a href="javascrpt:void(0)" ></a></li>
+								<li><img src="../../images/edit/jt-skin-pic07.jpg" width="218" height="99" /><a href="javascrpt:void(0)" ></a></li>
+								<li><img src="../../images/edit/jt-skin-pic08.jpg" width="218" height="99" /><a href="javascrpt:void(0)" ></a></li>
+								<li><img src="../../images/edit/jt-skin-pic09.jpg" width="218" height="99" /><a href="javascrpt:void(0)" ></a></li>
+								<li><img src="../../images/edit/jt-skin-pic10.jpg" width="218" height="99" /><a href="javascrpt:void(0)" ></a></li>
+							</ul>
+		                </div>
+		                <span class="next"></span>
+		               	</div>
+		                <script>
+							$(".editBox .control").click(function(){
+								$(this).toggleClass("full")
+								$(" .editWrap .mainArea, .editWrap .avatar, .editWrap .triangle, .mainArea .editBox").toggleClass("full")
+								var imgSrc=$('.editWrap .insert img').attr('src');
+								var $slideBar=$('.mainArea .insert .slideBar');
+								var $zoomBar=$(".zoomBar");
+								var $progress=$zoomBar.find('.progress');
+								var zoomBarWidth=$(".zoomBar").width();
+								var nowleft= $slideBar.css('left');
+								var ratio=parseInt(nowleft)/zoomBarWidth;
+								if(imgSrc&&imgSrc.indexOf('line')>0){
+									$('.editWrap .insert img').css('width','90%');
+									var imgWidth=$('.editWrap .insert img').width();
+									
+									$('.editWrap .insert img').css('width',imgWidth*ratio);
+								
+								
+									//拖拽滑块
+									$slideBar.draggable({
+										"containment" : "parent" , 
+										drag : function(event,ui){
+											var x = ui.position.left;
+											$progress.css('width',x+10);
+											var ratio=(x+10)/zoomBarWidth;
+											
+											$('.editWrap .insert img').css('width',imgWidth*ratio);
+										}
+									});
+								}
+								$('.styleTemplate .tabContent li').click(function () {
+									
+									$slideBar.css('left',185);
+									$progress.css('width',195);
+								})
+								$('.styleTemplate .tabContent .first li').click(function () {
+									$('.editWrap .insert img').css('width','90%');
+									//拖拽滑块
+									$slideBar.draggable({
+										"containment" : "parent" , 
+										drag : function(event,ui){
+											var x = ui.position.left;
+											$progress.css('width',x+10);
+											var ratio=(x+10)/zoomBarWidth;
+											$('.editWrap .insert img').width(window.imgWidth*ratio);
+										}
+									});
+									
+								});
+								
+							})
+
+							$(".box ul").on("click","li",function(){//换肤脚本，根据图片路径数字调用相应样式
+									var i=$(this).children("img").attr("src")
+									var str=i.slice(-6,-4)
+								$(this).children("a").addClass("cover")
+								$(this).siblings().children("a").removeClass("cover")
+								$(".changeBg").attr("class","changeBg skin"+str)
+								})
+						   $(".skinWrap .change").click(function(){
+							   $(this).find("p").toggleClass("fold")
+							   if($(".showArea").css("display")=="none")
+							   {$(".showArea").slideDown(300)}
+							   else{$(".showArea").slideUp(300)}
+							   })
+							$(".box").superSlider({
+								prevBtn: 	 ".prev",//左按钮
+								nextBtn: 	 ".next",//右按钮
+								listCont:    "#roll",//滚动列表外层
+								scrollWhere: "prev",//自动滚动方向next
+								delayTime: 	 1000,//自动轮播时间间隔
+								speed: 		 500,//滚动速度
+								amount: 	 1,//单次滚动数量
+								showNum: 	 5,//显示数量
+								autoPlay: 	 false//自动播放
+							});
+		                </script>
+		            </div>
+		       </div> 
+		    </div>
+		</div>
+		<div class="footer">
+			<div class="width1200pxAuto clearfix">
+				<div class="left footer-l"><img src="../../images/platform/footer-logo.png" width="222" height="74" alt=""></div>
+				<div class="left footer-c">
+					<p>服务热线：400-819-9993</p>
+					<p class="consult">在线咨询：<a href="" target="_blank">http://help.cnki.net</a></p>
+				</div>
+				<div class="left footer-r">
+					<p>数字出版：《中国学术期刊（光盘版）》电子杂志社有限公司</p>
+					<p>京ICP证040431号 互联网出版许可证 新出网证(京)字008号</p>
+				</div>
+			</div>
+			<p class="copyright">在线发行：同方知网（北京）技术有限公司&nbsp;&nbsp;&nbsp;&nbsp;北京市公安局海淀分局&nbsp;备案号11010802020460</p>
+		</div>
+	<script>
+	/*插入关键字*/
+	(function(){
+	var input=$("#keyword");
+	var jsNode=document.getElementById("keyword");
+	function CreateKeywordNode(value)
+	{
+		var keyword=document.createElement("div");
+		var closeIt=document.createElement("div");
+		closeIt.className="close";
+		keyword.className="keyword";
+		var text=document.createTextNode(value);
+		keyword.appendChild(text);
+		keyword.appendChild(closeIt);
+		document.getElementById("parentFrame").insertBefore(keyword,jsNode);
+		jsNode.value="";	
+	}
+
+	/*根据用户的输入是否带有空格来判断*/
+	input.keyup(function(e)
+	{
+		var value=$(this).val();
+		var useInputLength=value.length;
+		
+		if($.trim(value).length!=useInputLength && Boolean($.trim(value).length))
+		{   
+			var children=$(this).parent().children();
+			var sumLen=0;
+			var childrenLen=children.length;
+			for(var i=0;i<childrenLen;i++)
+			{
+				sumLen += children.eq(i).width();
+			}
+			if(/*sumLen<350*/1)
+			{
+				CreateKeywordNode(jsNode.value);
+				$(".keyword .close").click(function(){$(this).parent().remove();});
+			}
+		}
+	});
+
+	input.focus(function()
+	{
+		if($(this).val()=="多个关键词请用空格隔开，数量不超过5个")
+		{
+			$(this).val("");
+			$(this).removeClass("colorGrey");
+			$(this).css({"width":"120px"})
+		}
+	})
+	input.blur(function()
+	{
+		if($(this).val()=="" && $(this).parent().children().length==1)
+		{
+			$(this).val("多个关键词请用空格隔开，数量不超过5个");
+			$(this).addClass("colorGrey");
+			$(this).css({"width":"262px"})
+		}
+		else
+		{
+			var value=$(this).val();
+			var useInputLength=value.length;
+			if($.trim(value).length==useInputLength && Boolean($.trim(value).length))
+			{   
+				var children=$(this).parent().children();
+				var sumLen=0;
+				var childrenLen=children.length;
+				for(var i=0;i<childrenLen;i++)
+				{
+					sumLen += children.eq(i).width();
+				}
+				if(sumLen<350)
+			    {
+					CreateKeywordNode(jsNode.value);
+					$(".keyword .close").click(function(){$(this).parent().remove();});
+				}
+			}
+		}
+	})
+	})()	
+
+
+	$(function(){
+		//调用模拟下拉
+	 	$.divselect($(".select p"),$(".select ul:not(.select2 ul)"),$(".select ul li:not(./worksManagement ul li)"));
+	 	$(".tools .select p").click(function(){
+			$(".lineHeight ul").hide() 
+	 	});
+	 // 分别设置文本属性，对齐方式，缩进的选中状态
+		 $(".textSet").click(function(){
+			 $(this).toggleClass("click")
+			 })
+		$(".alignSet").click(function(){
+			 $(this).addClass("click").siblings(".alignSet").removeClass("click")
+			 })
+	   $(".sjSet").click(function(){
+			 $(this).addClass("click").siblings(".sjSet").removeClass("click")
+			 })
+		//行距脚本
+		$(".lineHeight").click(function(e){
+			$(".tools ul").hide()
+			$(this).addClass("click")
+			$(this).find("ul").slideDown(200)
+			e.stopPropagation();
+			})
+	  	$(".lineHeight li").click(function(e){
+		  $(this).addClass("select").siblings().removeClass("select")
+		  $(this).parents(".lineHeight").removeClass("click")
+		  $(this).parent("ul").slideUp(200)
+		  e.stopPropagation();
+		  })
+		$(document).click(function(){
+		$(".lineHeight").removeClass("click")
+			$(".lineHeight ul").hide();})
+		});
+
+		</script>
+	
+		<!-- 样式模板 -->
+		<script>
+		window.onload=function () {
+			var flag=true;
+			$('.editWrap .foldBtn').click(function () {
+				if(flag){
+					// 展开
+					$(this).addClass('active').animate({'right':'-294px'},500).siblings('.styleTemplate').animate({'right':'-283px','opacity':1},500);
+					$('.editWrap .mainArea').css('margin-left',34);
+					$('.editWrap .avatar').css('left',-75);
+					flag=false;
+				}else{
+					// 折叠
+					$(this).removeClass('active').animate({'right':'-10px'},500).siblings('.styleTemplate').animate({'right':0,'opacity':0},500);
+					$('.editWrap .mainArea').css('margin','0 auto');
+					$('.editWrap .avatar').css('left',50);
+					flag=true;
+				}
+				
+			});
+
+			$('.styleTemplate .colorbar span').click(function () {
+				if($(this).hasClass('cur')) return;
+				$(this).addClass('cur').siblings().removeClass('cur');
+				var color=$(this).attr('data-color');
+
+				$('.styleTemplate .tabContent ul').each(function () {
+					if($(this).css('display')=='block'){
+						$(this).find('img').each(function () {
+							var imgSrc=$(this).attr('src');
+							imgSrc=imgSrc.replace(/[c][0-9]+/g,color);
+							$(this).attr('src',imgSrc);
+						})
+					}
+				})
+			});
+
+			$('.styleTemplate .tabnav a').click(function () {
+				if($(this).is(':last-child')){
+					$('.colorbar').hide();
+				}else{
+					$('.colorbar').show();
+				}
+				$('.styleTemplate .tabContent ul img').each(function () {
+					var imgSrc=$(this).attr('src');
+					imgSrc=imgSrc.replace(/[c][0-9]+/g,'c1');
+					$(this).attr('src',imgSrc);
+				})
+				$(this).addClass('cur').siblings().removeClass('cur');
+				$('.styleTemplate .colorbar span').removeClass('cur').eq(0).addClass('cur');
+				$('.tabContent ul').eq($(this).index()).show().siblings().hide();
+
+			});
+			$('.styleTemplate .tabContent li').click(function () {
+				$(this).toggleClass('cur').siblings().removeClass('cur');
+				$('.mainArea .insert').show();
+				var imgSrc=$(this).find('img').attr('src');
+				imgSrc=imgSrc.replace(/-s/g,'-b');
+				$('.mainArea .insert').find('img').remove().end().append('<img src="'+imgSrc+'">');
+				var $insertimg=$('.mainArea .insert img');
+				setTimeout(function () {
+					window.imgWidth=$insertimg.width();
+				},100);
+				// 缩放拖拽滑块
+				var $slideBar=$('.mainArea .insert .slideBar');
+				var $zoomBar=$(".zoomBar");
+				var $progress=$zoomBar.find('.progress');
+				var zoomBarWidth=$(".zoomBar").width();
+				var nowleft= $slideBar.css('left');
+				$progress.css('width',nowleft);
+				//拖拽滑块
+				$slideBar.draggable({
+					"containment" : "parent" , 
+					drag : function(event,ui){
+						var x = ui.position.left;
+						$progress.css('width',x+10);
+						var ratio=(x+10)/zoomBarWidth;
+						$insertimg.width(window.imgWidth*ratio);
+					}
+				});
+			});
+
+
+		}
+
+		</script>
+    </body>
+</html>

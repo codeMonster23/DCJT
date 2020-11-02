@@ -1,0 +1,67 @@
+/*
+* @Author: Administrator
+* @Date:   2017-07-28 08:27:14
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-11-27 14:44:41
+*/
+body{ background-color: #ebebeb; }
+.header{ height: 70px; background-color: #fff; box-shadow: 5px 5px 10px rgba(0,0,0,0.1); }
+.header .logo{ margin: 14px 55px 0 0; width: 176px;height: 44px;background: url(../../images/platform/logo.png) no-repeat;}
+.header .logo a{display: block;}
+.header .nav li{ float: left; margin-right: 20px; }
+.header .nav li a{ display: block; padding: 0 12px; font: 18px/67px "Microsoft Yahei"; color:#333; }
+.header .nav li.active .nav-item{ border-bottom: 3px solid #fd6801; color: #fd6801; }
+.header .nav .dropdown i{ margin-left: 7px; font-size: 14px; }
+.dropdown{ position: relative; z-index: 10000; }
+.dropdown-menu{ position: absolute; top:67px; left:0; border: 1px solid #d1d1d1; background-color: #fff; z-index: 100; display: none; }
+.header .dropdown-menu{ width: 123px; left:50%; margin-left: -61px; border-color: #eee; border-top-color: #fff; }
+.header .dropdown-menu li{ float: none; width: 100%; }
+.dropdown .dropdown-menu li a{ display: block; width: 100%; line-height: 36px; padding: 0; font-size: 14px; text-align: left; color: #7d7d7d; }
+.header .dropdown .dropdown-menu li a{ text-align: center; }
+.dropdown .dropdown-menu li.active a{ background-color: #f97540 !important; color: #fff !important; }
+.header .search{width: 258px;height: 34px; margin-top: 18px; border: 1px solid #dedede;border-radius: 3px;background-color: #f9f9f9;z-index: 100;}
+.header .search.active{border-color: #fd6801;background-color: #fff;}
+.header .input-group{ width: 210px;}
+.header .input-group .dropdown{ font-size: 14px; font-family: "Microsoft Yahei"; }
+.header .input-group .dropdown-toggle{ display: block; width: 55px; height: 34px; line-height: 34px; padding-left: 12px; color: #666; }
+.header .input-group .dropdown-toggle i{ font-size: 11px; }
+.header .input-group .dropdown-menu{ top: 34px; margin-left: -33px; width: 64px; padding-top: 18px; border: none; border-bottom: 1px solid #eee; }
+.header .input-group .dropdown-menu li a{ width: 50px; padding-left: 12px; border: 1px solid #eee; border-top-color: #fff; border-bottom-color:  #fff; text-align: left; }
+.header .history { display: block; position: absolute; left: 64px; margin-left: 0; top: 35px; width: 142px; padding-top: 18px; border: none; background: #fff; }
+.header .history li a{ display: block; line-height: 34px; padding-left: 12px; border: 1px solid #eee; border-top-color: #fff; border-bottom-color: #fff; font-size: 14px; font-family: "Microsoft Yahei"; text-align: left; color: #7d7d7d; }
+.header .history li a:hover{ border-color:#eee; background-color: #f5f5f5; color: #fd6801; }.header .input-group input{ float: left; width: 138px; height: 34px; line-height: 34px; padding-left: 5px;border: 0 none; background-color: #f9f9f9;}
+.dropdown .dropdown-menu li a:hover{ border-color:#eee; background-color: #f5f5f5; color: #fd6801; }
+.header .searchbtn{  width: 47px; height: 34px; background-image:url(../../images/platform/icon7.png);background-repeat: no-repeat;background-position:center; }
+.header .loginWrap{ position: relative; background-color: #fff; z-index: 10000; }
+.header .login{ padding: 15px 20px 15px 26px; }
+.header .login a{ display: inline-block; padding:0 12px; font: 14px/40px "Microsoft Yahei"; color: #666; }
+.header .login a:hover{ color: #fd6801; }
+.header .user{ width: 122px; padding: 0 15px 0 10px; }
+.header .user p{ padding: 15px 0; height: 40px; cursor: pointer; }
+.header .user-avatar{float: left;width: 32px;height: 32px;margin:4px 10px 0 0;}
+.header .user p img{ float: left; width: 30px; height: 30px; border: 1px solid #d9dde2; border-radius: 50%;  }
+.header .user-avatar i{ position: absolute; top:-5px; right: -5px; width: 21px; height: 21px; line-height: 21px; font-weight: bold;background: url(../../images/platform/icon21.png) no-repeat; text-align: center; color: #fff; }
+.header .user .username{ float: left; width: 60px;line-height: 40px; white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+.header .user .dropdown-menu{ left:0; margin-left: 0;top: 68px; width: 132px; border-bottom: 1px solid #eee; }
+.header .user .dropdown-menu a{ position: relative; width:102px; padding-left: 28px; border-left: 1px solid #eee; border-right: 1px solid #eee; background: url(../../images/platform/icon15.png) 20px center no-repeat; color: #828ea0; }
+.header .user .dropdown-menu a:hover{ background-image: url(../../images/platform/icon15-a.png); }
+.header .user .personalCenter a{ background-image: url(../../images/platform/icon16.png); }
+.header .user .personalCenter a:hover{ background-image: url(../../images/platform/icon16-a.png); }
+.header .user .homepage a{ background-image: url(../../images/platform/icon17.png); }
+.header .user .homepage a:hover{ background-image: url(../../images/platform/icon17-a.png); }
+.header .user .msg a{ background-image: url(../../images/platform/icon18.png); }
+.header .user .msg a:hover{ background-image: url(../../images/platform/icon18-a.png); }
+.header .user .quit a{ background-image: url(../../images/platform/icon19.png); }
+.header .user .quit a:hover{ background-image: url(../../images/platform/icon19-a.png); }
+.header .user .msg i{ position: absolute; right:12px; top:10px; width: 7px; height: 7px; background: url(../../images/platform/icon20.png) no-repeat; }
+.header .rightbtn{ width: 90px; line-height: 30px; margin-top: 20px; border-radius: 15px; text-align: center; font: 16px/30px "Microsoft Yahei"; color: #fff; }
+.footer{ height: 200px; padding-top: 43px; background-color: #474443; font-size: 16px; font-family: "Microsoft Yahei"; color: #d2d2d2; }
+.footer a{ color: #d2d2d2; }
+.footer-l{width: 222px;height: 74px;background: url(../../images/platform/footer-logo.png)  no-repeat;}
+.footer-c{ width: 348px; padding-left: 38px; /* padding:6px 0 0 38px; */margin-left:42px; border-left: 1px solid #cfcfcf; border-right: 1px solid #cfcfcf; }
+.footer-c p,.footer-r p{ line-height: 34px; }
+.footer-c p{ padding-left: 28px; background: url(../../images/platform/icon5.png) left center no-repeat; }
+.footer-c .consult{ background-image: url(../../images/platform/icon6.png); }
+.footer-r{ padding-left: 92px; }
+.copyright{ margin-top: 65px; text-align: center; color: #a0a0a0; }
+

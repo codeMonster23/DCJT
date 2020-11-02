@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="../../css/public/public.css">
+		<link rel="stylesheet" href="../../css/picLecture/style.css">
+		<script src="../../js/public/jquery-1.8.2.min.js"></script>
+		<style>
+			html,body{
+				height: 100%;
+			}
+		</style>
+	</head>
+    <body bgcolor="#000">
+    	<div class="header header2 clearfix">
+			<div class="left clearfix">
+				<div class="left logo"><a href=""><img src="../../images/picLecture/icon37.png" width="50" alt=""></a></div>
+				<div class="left title">曙光幼儿园第二十一届学生美术作品展</div>
+				<div class="left author">主讲：友夏</div>
+			</div>
+			<div class="right icon-group clearfix">
+				<a href=""></a>
+				<a href="" class="icon-collect"></a>
+				<a href="" class="icon-share"></a>
+			</div>
+		</div>
+		<div class="container coverTemplate clearfix">
+			<div class="main">
+				<div class="inner" style="margin:0;background-image:url(../../imagesTemp/picLecture/cover-b3.jpg);background-position:top center">
+					<div class="wrap">
+						<div class="title">曙光幼儿园第二十一届学生美术作品展曙光</div>
+						<div class="content clearfix">
+							<div class="left cover">
+								<img src="../../imagesTemp/picLecture/group-cover1.jpg" alt="">
+							</div>
+							<div class="left info">
+								<div class="intro">美育的重要之处在于它不仅是一门升学考试的筹码，而是一项惠及孩子终身成长的事情。生活的方方面面需要美的存在，去发现，去感受。懂得美，理解美，是获得幸福感的根基。孔子曰：“兴于诗，立于礼，成于乐”，美的力量是巨大却又温润的，没有美的教育是不完整的。</div>
+								<div class="name">
+									<img class="avatar" src="../../imagesTemp/picLecture/avatar.jpg" alt="">
+									<span>主讲人：友夏</span>
+								</div>
+								<a href="" class="btn-play">立即播放</a>
+							</div>
+						</div>
+					</div>
+				</div>	
+            </div>
+		</div>
+    </body>
+<script>
+	var pageHeight = $(document).height(); // 页面高度
+	var pt =  ''; //wrap div的padding-top值
+	var wrapHeight =  $('.wrap').height();
+	var PADDING = 100;  //设置一个固定间距
+	if(pageHeight - PADDING > wrapHeight){
+	    pt = ((pageHeight - wrapHeight - PADDING)/2)+ 'px';
+        $('.main .wrap').css('top',pt)
+	}else {
+        $('.main .wrap').css('top','30px')
+	}
+	$(window).resize(function(){
+        pageHeight = $(document).height();
+        if(pageHeight - PADDING > wrapHeight){
+
+            pt = ((pageHeight - wrapHeight - PADDING)/2)+ 'px';
+            $('.main .wrap').css('top',pt);
+        }else {
+            $('.main .wrap').css('top','30px')
+        }
+	})
+</script>
+</html>

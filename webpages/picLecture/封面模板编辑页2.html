@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="../../css/public/public.css">
+		<link rel="stylesheet" href="../../css/picLecture/style.css">
+		<style>
+			html,body{
+				position: relative;
+				height: 100%;
+			}
+			.groupCover {
+				position: absolute;
+				top:50%;
+				margin-top:-326px;
+				left:50%;
+				margin-left:-477px;
+				width: 954px;
+				height: 652px;
+			}
+			.groupCover img{
+				width: 100%;
+				height: 100%;
+			}
+			.groupCover .content {
+				position: absolute;
+				top: 25%;
+				width: 100%;
+			}
+			.groupCover .title .text, .groupCover .title input {
+				display: block;
+				height: 92px;
+				margin: 0 auto 27px;
+				text-align: center;
+				color: #ff6905;
+				font: bold 60px/92px "Microsoft Yahei";
+			}
+			.groupCover .title input {
+				width: 60%;
+				background: none;
+			}
+			.groupCover2 .title input, .groupCover2 .title .text {
+				color: #fff;
+			}
+			.groupCover .groupDesc .text, .groupCover .groupDesc textarea {
+				display: block;
+				height: 100px;
+				line-height: 30px;
+				margin: 0 auto;
+				color: #1f1f1f;
+				font: 18px/30px "Microsoft Yahei";
+				overflow: hidden;
+			}
+			.groupCover .groupDesc textarea {
+				width: 60%;
+				height: 200px;
+				line-height: 30px;
+				padding: 5px 0;
+				background: none;
+				text-align: center;
+				color: #1f1f1f;
+			}
+			.groupCover2 .groupDesc textarea, .groupCover2 .groupDesc .text {
+				color: #fff;
+			}
+			.groupCover2 .groupDesc textarea:-ms-input-placeholder { 
+				font-size:18px;
+				color: #fff; 
+			}
+			.groupCover2 .groupDesc textarea::-webkit-input-placeholder { 
+				font-size:18px;
+				color: #fff; 
+			}
+		</style>
+	</head>
+    <body bgcolor="#000">
+		<div class="groupCover groupCover2">
+			<img src="../../imagesTemp/picLecture/group-cover2.jpg" alt="" />
+			<div class="content">
+				<div class="title">
+					<!-- <span class="text">小一班绘画作品</span> -->
+					<input type="text" value="小一班绘画作品">
+				</div>
+				<div class="groupDesc">
+					<!-- <span class="text">小一班绘画作品，包括肖像画、简笔画、风景画等，小一班绘画作品，包括肖像画、简笔画、风景画等，小一班绘画作品，包括肖像画、简笔画、风景画等，小一班绘画作品，包括肖像画、简笔画、风景画等...</span> -->
+					<textarea placeholder="输入分组描述"></textarea>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>

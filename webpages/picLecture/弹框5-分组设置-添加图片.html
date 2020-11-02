@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="../../css/public/public.css">
+		<link rel="stylesheet" href="../../css/picLecture/modalStyle.css">
+		<link rel="stylesheet" href="../../css/picLecture/style.css">
+    </head>
+    <body>
+		<div class="mask"></div>
+		<div class="modal modal5">
+			<div class="modal-header">
+				<a href="" class="close"></a>
+				<div class="title clearfix">
+					<span class="cur">添加图片</span>
+					<span>自定义上传</span>
+				</div>
+			</div>
+			<div class="modal-body">
+				<div class="addImg">
+					<div class="info clearfix">
+						<div class="left cover"><img src="../../imagesTemp/picLecture/group-cover2.jpg" alt=""></div>
+						<span class="left name">缤纷色彩</span>
+						<a href="" class="btn-use">使用此模板</a>
+					</div>
+					<div class="picBox">
+						<div class="carousel">
+							<ul class="imageList">
+								<li><img src="../../imagesTemp/picLecture/group-cover3.jpg" alt="" /></li>
+								<li><img src="../../imagesTemp/picLecture/group-cover4.jpg" alt="" /></li>
+								<li><img src="../../imagesTemp/picLecture/group-cover5.jpg" alt="" /></li>
+								<li><img src="../../imagesTemp/picLecture/group-cover6.jpg" alt="" /></li>
+							</ul>
+						</div>
+						<div class="btns">
+							<a href="javascript:void(0);" class="leftBtn"></a>
+							<a href="javascript:void(0);" class="rightBtn"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../js/public/jquery-1.8.2.min.js"></script>
+		<script src="../../js/picLecture/carousel.js"></script>
+		<script src="../../js/picLecture/picLecture.js"></script>
+		<script>
+			carousel(".modal5 .addImg .picBox",2400,400,164);
+		</script>
+    </body>
+</html>
